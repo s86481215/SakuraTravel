@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="../../css/skafall.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="icon" href="../../picture/LOGO.svg">
     <title>旅遊地點</title>
 </head>
 <body>
     <!-----------------------------以下屬於header_nav------------------------------>  
-     <header class="header">
+    <header class="header">
 
-        <div= class="header_content">
+        <div class="header_content">
             <div class="logo">
                 <a href="../../home/html/sakure.html"><img src="../../picture/LOGO.svg" alt=""></a>
             </div>
@@ -30,6 +31,7 @@
                     <li><a href="../../knowledge/html/knowledge.html">趣味知識</a></li>
                     <li><a href="../../e-mail/html/e-mail.html">櫻-mail</a></li>
                 </ul>
+
                 <div class="nav_icon">
                     <a  class= 'icon_1' href="../../Login/html/Login.html"> <i class="fa-regular fa-user"></i> </a>
                     <a class= 'icon_2'  href="../../shoppingcart/html/shop.html"> <i class="fa-solid fa-cart-shopping"></i></a>
@@ -41,6 +43,10 @@
 
     <!--------------------------------以下屬於main------------------------------->
     <main>
+        
+        <!----------這是櫻花的空盒子------------>
+
+        <div class="sakubox"></div> 
            
         <div class="main_travel_banner">
             <button class="main_theme-switch">
@@ -226,19 +232,15 @@
                 <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-
-        <!----------這是櫻花的空盒子------------>
-
-         <div class="sakubox"></div> 
-
-
     </main>
     <!------------------------------footer---------------------------------------->
-     <footer>
+    <footer>
+
         <div class="footer_content">
+
             <div class="footer_border">
                 <div class="footer_logo">
-                     <img src="../../picture/LOGO.svg" alt="">
+                    <img src="../../picture/LOGO.svg" alt="櫻映旅途logo">
                 </div>
 
                 <div class="footer_text">
@@ -248,16 +250,20 @@
                 </div>
 
                 <div class="footer_icon">
-                    <a href=""></a><i class="fa-brands fa-line" style="color: #63E6BE;"></i></a>
-                    <a href=""></a><i class="fa-brands fa-twitter" style="color: #74C0FC;"></i></a>
-                    <a href=""></a> <i class="fa-brands fa-facebook" style="color: #173fde;"></i></a>
+                    <a href=""><i class="fa-brands fa-line" style="color: #63E6BE;"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter" style="color: #74C0FC;"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook" style="color: #173fde;"></i></a>
                 </div>
             </div>
+
         </div>
-                <div>
-                    <p>本網站為緯育TibaMe前端工程師班第XX期學員專題作品,本平台僅供學習、展示之用。參考資源: www.wwww.wwwww.com</p>
-                </div>
+
+        <div class="footer_note">
+            <p>本網站為緯育TibaMe前端工程師班第XX期學員專題作品,本平台僅供學習、展示之用。參考資源: www.wwww.wwwww.com</p>
+        </div>
+
     </footer>
+
 
     <!-----------------------------鑲入地圖視窗------------------------------>
         
@@ -285,18 +291,6 @@
                 });
 
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
 
     
 </body>

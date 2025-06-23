@@ -4,8 +4,6 @@ main{
     line-height: 1.6;
     font-size: 16px;
     color: #54494B;
-    
-
 }
 /*--------------------------------第一塊圖----------------------------------->*/
 .main_pc1{
@@ -16,8 +14,6 @@ main{
     max-width: 1200px;
     margin: 0 auto 160px;
     gap: 90px;
-    
-
 }
 
 .main_pc1_text{
@@ -36,7 +32,6 @@ main{
 .main_pc1_img img{
     width: 500px;
     height: 350px;
-
 }
 
 .main_pc1_text h1{
@@ -49,13 +44,11 @@ main{
 
 .main_pc1_text p{
     font-size: 1rem;
-    
 }
 
 .main_pc1_img:hover{
     transform: scale(1.2);
     transition-delay: 2s;
-    
 }
 /*--------------------------------第二塊圖----------------------------------->*/
 
@@ -86,8 +79,6 @@ main{
     aspect-ratio: 5/3;
     width: 100%;
     height: auto;
-   
-
 }
 
 .main_pc2_text h1{
@@ -112,8 +103,6 @@ main{
     max-width: 1200px;
     margin: 0 auto 160px;
     gap: 90px;
-
-
 }
 
 .main_pc3_text{
@@ -159,8 +148,6 @@ main{
     max-width: 1200px;
     margin: 0 auto 160px;
     gap: 90px;
-
-
 }
 
 .main_pc4_text{
@@ -180,7 +167,6 @@ main{
     aspect-ratio: 5/3;
     width: 100%;
     height: auto;
-
 }
 
 

@@ -2,9 +2,6 @@ main{
     margin-bottom: 160px;
     font-size: 1rem;
   
-    
-
-
 }
 
 
@@ -18,8 +15,6 @@ main{
     color: color-mix(in srgb, #FFB2C1 50%, #FF6F91 50%);
     margin-bottom:20px;
     font-weight: bold;
-    
-
 }
 
 .main_title h2{
@@ -43,8 +38,6 @@ main{
     align-items: center;
     flex-direction: column;
     gap: 80px;
-    
-
 }
 
 .main_text input{
@@ -52,8 +45,6 @@ main{
     height: 20px;
     border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
     border-radius: 15px;
-
-
 }
 
 .main_text input:nth-child( 3 ){
@@ -65,8 +56,6 @@ main{
     padding-left: 10px;
     color: gray;
     opacity: 30%;
-    
-
 }
 
 .main_text input:nth-child(3)::placeholder{
@@ -78,7 +67,6 @@ main{
 .btn{
     margin-top: 80px;
     text-align: center;
-    
 }
 
 button{

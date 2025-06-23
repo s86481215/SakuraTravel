@@ -11,16 +11,10 @@ main{
     align-items: center;
     justify-content: center;
     gap: 180px;
-
 }
 
-
-.shop_bar p{
-     
-}
 
 .bar_circle{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +30,6 @@ main{
 }
 
 .bar_circle_se{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,11 +43,9 @@ main{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    
 }
 
 .bar_circle_th{
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,7 +99,6 @@ main{
     flex-direction: column;
     background-color: #FEEDED;
     padding-bottom: 16px;
-    
 }
     
 
@@ -120,7 +110,6 @@ main{
 
 .shopping p {
     color: #B25A74;
-    
 }
 
 .shopbox{
@@ -231,9 +220,6 @@ main{
     display:flex;
     align-items: center;
     justify-content: center;
-    
-   
-
 }
 
 .info_form label:nth-child(1){
@@ -241,19 +227,13 @@ main{
     justify-content:center;
     width: 300px;
     margin: 0 auto;
-    
-    
 }
     
 
 .info_text::before{
     content: '姓名';
-   text-align: center;
-    width: 60px;
-    
-   
-
-       
+    text-align: center;
+    width: 60px;       
 }
 .info_text:nth-child(3)::before{
     content: '手機';
@@ -261,7 +241,6 @@ main{
 
 .info_text:nth-child(4)::before{
     content: 'e-mail';
-   
 }
 
 .info_text input{

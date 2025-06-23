@@ -17,17 +17,33 @@ main{
 
 }
 .main_title{
-    font-size: 2rem;
-    color:#B25A74;
+    font-size: 2.4rem;
+    color:#E86487;
     text-align: center;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.main_title h1{
+    margin: 0 20px;
+}
+
+.main_title .line{
+    display: block;
+    height: 2px;
+    width: 80px;
+    background-color: rgb(207, 17, 150);
+
 }
 
 .main_inputbox{
+    
     display: flex;
     flex-direction: column;
     gap:100px;
     margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .main_inputbox h2{
@@ -35,6 +51,7 @@ main{
     margin-bottom: 16px;
     margin-left: 10px;
     color: #B25A74;
+
 }
 
 .day_input,
@@ -64,30 +81,28 @@ main{
     background-color:color-mix(in srgb, #FFB2C1 50%, #FF6F91 50%);
     cursor: pointer;
     border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
-    margin-bottom: 80px;
+    margin-bottom: 160px;
 }
 
 main h3{
-    font-size: 1.2rem;
+    
+    font-size: 2rem;
     color: #B25A74;
-    margin-bottom: 40px;
     font-weight: bold;
+    padding: 10px;
+
+}
+
+.sub_title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-/*-----------------------------輪播DIV----------------------*/
+/*-----------------------------輪播DI----------------------*/
 
 .main_trippic{
     width: 100%;

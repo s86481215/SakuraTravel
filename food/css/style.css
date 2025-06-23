@@ -54,7 +54,7 @@ main p{
 /*---------------------picture------------------*/  
 
 /*-----------------------第一區分頁-------------------------*/
-.main_contint {
+.main_content {
     display: flex;
     flex-direction:column;
     width: 100%;
@@ -165,7 +165,7 @@ main p{
 
 /*------------------------第二區分頁--------------------------*/
 
-.main_contint2 {
+.main_content2 {
     width: 100%;
     margin-bottom: 160px;
      
@@ -201,7 +201,7 @@ main p{
 /*-------------------------第三區分頁-------------------------*/
 
 
-.main_contint3{
+.main_content3{
     width: 100%;
     margin-bottom: 160px;
    
