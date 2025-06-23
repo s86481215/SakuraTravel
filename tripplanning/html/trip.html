@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../tripplanning/css/stytle.css">
+    <link rel="stylesheet" href="../../css/splide.min.css">
+    <link rel="stylesheet" href="../../css/skafall.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>行程規劃</title>
+</head>
+
+
+
+<body>
+<!-----------------------------以下屬於header_nav------------------------------>  
+   <header class="header">
+
+        <div= class="header_content">
+            <div class="logo">
+                <a href="../../home/html/sakure.html"><img src="../../picture/LOGO.svg" alt=""></a>
+            </div>
+
+            <nav class="main_nav">
+                <ul>
+                    <li><a href="../../information/html/information.html">櫻花資訊</a></li>
+                    <li><a href="../../travel/html/travel.html">旅遊地點</a></li>
+                    <li><a href="../../tripplanning/html/trip.html">行程規劃</a></li>
+                    <li><a href="../../food/html/food.html">櫻花美食</a></li>
+                    <li><a href="../../knowledge/html/knowledge.html">趣味知識</a></li>
+                    <li><a href="../../e-mail/html/e-mail.html">櫻-mail</a></li>
+                </ul>
+                <div class="nav_icon">
+                    <a  class= 'icon_1' href="../../Login/html/Login.html"> <i class="fa-regular fa-user"></i> </a>
+                    <a class= 'icon_2'  href="../../shoppingcart/html/shop.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+<!--------------------------------以下屬於main------------------------------->
+    <main>
+           
+          
+        <div class="main_trip_planning_banner">
+        
+        <button class="main_theme-switch">
+          <img src="../../picture/sun.svg"  class = "sun" alt="">
+          <img src="../../picture/night.svg" class = "night" alt="">
+        </button>
+
+
+        </div>
+
+        <div class="maincontent">
+
+            <div class="main_title">
+                <h1>行程規劃</h1>
+            </div>
+
+            <div class="main_inputbox">
+
+                <div class="date">
+                <h2>日期</h2>
+                <input type="date" placeholder="輸入日期" class="day_input">
+                </div>
+
+                <div class="place">
+                <h2>地點</h2>
+                <input type="text" placeholder="" class="place_input">
+                </div>
+
+                <div class="person">
+                <h2>人數</h2>
+                <input type="text" placeholder="" class="person_input">
+                </div>
+
+
+            </div>
+
+            <div class="main_button">
+                <button>加入購物車</button>
+             </div>
+
+             <h3>推薦行程</h3>
+
+              <div id="main_trippic" class="splide">
+                <div class="splide__track">
+                    <div class="splide__list">
+
+                        <div class="splide__slide">
+                            <img src="../../picture/trip01.png" alt="">
+                        </div>
+
+                        <div class="splide__slide">
+                            <img src="../../picture/trip02.png" alt="">
+                        </div>
+
+                        <div class="splide__slide">
+                            <img src="../../picture/trip03.png" alt="">
+                        </div>
+
+
+
+                    </div>
+                </div>
+              </div>
+
+        </div>
+
+         <!----------這是櫻花的空盒子------------>
+
+         <div class="sakubox"></div> 
+
+    </main>
+    <!--------------------------------------footer------------------------------------------------>
+    <footer>
+        <div class="footer_content">
+            <div class="footer_border">
+                <div class="footer_logo">
+                     <img src="../../picture/LOGO.svg" alt="">
+                </div>
+
+                <div class="footer_text">
+                    <h2>電話: 02-2712-0589</h2>
+                    <h3>地址: 104台北市中山區南京東路三段219號</h3>
+                    <h4>信箱: sakura@gmail.com</h4>
+                </div>
+
+                <div class="footer_icon">
+                    <a href=""></a><i class="fa-brands fa-line" style="color: #63E6BE;"></i></a>
+                    <a href=""></a><i class="fa-brands fa-twitter" style="color: #74C0FC;"></i></a>
+                    <a href=""></a> <i class="fa-brands fa-facebook" style="color: #173fde;"></i></a>
+                </div>
+            </div>
+        </div>
+                <div>
+                    <p>本網站為緯育TibaMe前端工程師班第XX期學員專題作品,本平台僅供學習、展示之用。參考資源: www.wwww.wwwww.com</p>
+                </div>
+    </footer>
+
+
+
+<!---------------------------------------JS區----------------------------------------------->
+
+<script src="../../js/sakure.js"></script>
+<script src="../../js/splide.min.js"></script>
+
+<script>  document.addEventListener('DOMContentLoaded',function(){
+        new Splide('#main_trippic',{
+            type:'loop',
+            perPage: 1,
+            autoplay:false,
+        }).mount();
+    }
+);    
+</script>
+
+
+    
+</body>
+</html>

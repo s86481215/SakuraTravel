@@ -1,0 +1,133 @@
+main{
+    font-size: 1rem;;
+}
+
+
+
+.maincontent{
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 160px;
+    
+
+
+}
+.main_title{
+    font-size: 2rem;
+    color:#B25A74;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main_inputbox{
+    display: flex;
+    flex-direction: column;
+    gap:100px;
+    margin-bottom: 40px;
+}
+
+.main_inputbox h2{
+    font-size: 0.8rem;
+    margin-bottom: 16px;
+    margin-left: 10px;
+    color: #B25A74;
+}
+
+.day_input,
+.place_input,
+.person_input {
+    width: 350px;
+    height: 20px;
+    border-radius: 60px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+    border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
+}
+
+.day_input::placeholder{
+    color: #cccccc7b
+}
+
+
+.main_button button{
+    margin: 0 auto;
+    border-radius: 15px;
+    color: #ea215d;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color:color-mix(in srgb, #FFB2C1 50%, #FF6F91 50%);
+    cursor: pointer;
+    border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
+    margin-bottom: 80px;
+}
+
+main h3{
+    font-size: 1.2rem;
+    color: #B25A74;
+    margin-bottom: 40px;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------輪播DIV----------------------*/
+
+.main_trippic{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.splide__track{ 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    max-width: 1200px;
+    
+  
+}
+
+.splide__list{ 
+   width: 100%;
+   max-width: 1200px;
+    
+}
+
+.splide__slide{
+    width: 100%;
+    max-width: 1200px;
+    aspect-ratio: 12/3.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+
+.splide__slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}

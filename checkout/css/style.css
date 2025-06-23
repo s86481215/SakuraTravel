@@ -1,0 +1,309 @@
+main{
+    color: #B25A74;
+}
+
+
+/*----------shoppingcart-bar-----------*/
+.shop_bar {
+    margin-top: 160px;
+    margin-bottom: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+
+}
+
+
+.shop_bar p{
+     
+}
+
+.bar_circle{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.circle_1{
+    background-color:color-mix(in srgb, #FFB2C1 50%, #FF6F91 50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.bar_circle_se{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+}
+
+.circle_2{
+    background-color:color-mix(in srgb, #FFB2C1 50%, #FF6F91 50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+
+.bar_circle_th{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.circle_3{
+    background-color:color-mix(in srgb, #E6E6FA 40%, #6A5ACD 60%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.bar_circle_se::after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid color-mix(in srgb, #FFB2C1 50%, #FF6F91 50%);
+    width: 207px;
+    margin: 8px 0;
+    position: absolute;
+    top: 5px;
+    left: 80%;
+}
+
+
+.bar_circle_se::before{
+    content: '';
+    display: block;
+    border-bottom: 2px solid color-mix(in srgb, #FFB2C1 50%, #FF6F91 50%);
+    width: 207px;
+    margin: 8px 0;
+    position: absolute;
+    top: 5px;
+    right: 80%;
+}
+
+/*----------shop_content------------------*/
+.shopping{
+    width: 100%;
+    margin-bottom: 160px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+
+.shop_content{
+    width: 600px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FEEDED;
+    padding-bottom: 16px;
+    
+}
+    
+
+.shopping h1{
+    font-size: 1.5rem;
+    color: #e11a56;
+    font-weight: bold;
+}
+
+.shopping p {
+    color: #B25A74;
+    
+}
+
+.shopbox{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    border-bottom: 2px solid #FFB2C1;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.shopptitle{
+    height: 100%;
+    width: 100%;
+    margin-bottom:36px;
+    text-align: center;
+    background-color: color-mix(in srgb, #FFB2C1 50%, #FF6F91 50%);
+    padding: 5px 0;
+    
+}
+
+.shopplist{
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+/*-----------------shop_pay------------------*/
+
+.shop_pay{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #FEEDED;
+    
+}
+
+.pay_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 36px;
+ 
+}
+
+.formone{   
+    display: flex;
+ 
+    gap: 40px;
+    width: 250px;
+
+}
+
+.formtwo{
+    display: flex;
+    gap: 25px;
+    width: 250px;
+}
+
+.shop_pay>.shopptitle{
+    margin-bottom: 20px;
+}
+
+/*--------------shop_info-----------------*/
+
+.shop_info{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #FEEDED;
+    
+}
+
+.info_title{
+    width: 100%;
+    text-align: center;
+    background-color: color-mix(in srgb, #FFB2C1 50%, #FF6F91 50%);
+    padding: 5px 0;
+}
+
+.info_form{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 25px;
+        }
+
+
+.info_form label{
+    width: 100%;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+
+}
+
+.info_form label:nth-child(1){
+    display: flex;
+    justify-content:center;
+    width: 300px;
+    margin: 0 auto;
+    
+    
+}
+    
+
+.info_text::before{
+    content: '姓名';
+   text-align: center;
+    width: 60px;
+    
+   
+
+       
+}
+.info_text:nth-child(3)::before{
+    content: '手機';
+}
+
+.info_text:nth-child(4)::before{
+    content: 'e-mail';
+   
+}
+
+.info_text input{
+    
+    width: 150px;
+}
+.info_text{
+    margin-right: 40px;
+}
+
+/*--------------shop_btn-----------------*/
+
+.check_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    background-color: #FEEDED;
+}
+
+.check_btn button{
+    width: 100px;
+    height: 40px;
+    background-color: color-mix(in srgb, #FFB2C1 50%, #FF6F91 50%);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.check_btn a{
+    text-decoration: none;
+
+}
+
+.check_btn button:hover{
+    background-color: #FF6F91;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: translateY(-4px);
+}

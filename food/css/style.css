@@ -1,0 +1,233 @@
+main{
+    
+    font-size: 1rem;
+
+}
+
+main h1{
+     font-size: 1.5rem;
+    font-weight: bold;
+    color: #B25A74;
+}
+
+main p{
+    line-height: 1.6;
+    margin-top: 5px;
+    color: #54494B;}
+
+.main_switch img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+/*------------------button-------------------*/
+
+.main_btn{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 160px;
+    margin-top: 160px
+}
+
+.main_btn button{
+    width: 120px;
+    height: 55px;
+    font-size: 1.5rem;
+    color: #B25A74;
+    background: linear-gradient(to right,  rgba(234, 184, 241, 0.3), rgba(255, 204, 178, 1)), /*混色*/
+                linear-gradient(to right,  rgba(234, 184, 241, 0.3),rgba(255, 178, 193, 1));
+    background-blend-mode: soft-light;
+    border-radius: 15px;
+    border: #B25A74;
+    font-weight: bold;
+}
+
+.main_btn button:hover{
+    transform: translateY(-4px);
+    color: rgb(233, 110, 3);
+    cursor: pointer;
+}
+
+/*---------------------picture------------------*/  
+
+/*-----------------------第一區分頁-------------------------*/
+.main_contint {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 160px;
+    }
+
+.main_pcbox{
+    display: flex;
+    flex-direction:column;
+    
+}
+
+.main_pc1{
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 160px;
+}
+
+.main_pc2{
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    gap: 32px;
+     margin-bottom: 160px;
+}
+
+.main_pc3{
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    gap: 32px;
+     margin-bottom: 160px;
+}
+
+
+
+.main_contint p{
+    line-height: 1.6;
+    margin-top: 5px;
+    color: #54494B;
+}
+
+
+.main_pc1text {
+    width: 100%;
+    max-width: 560px;
+}
+
+.main_pc2text{
+    width: 100%;
+    max-width: 560px;
+    order: 1;
+}
+
+.main_pc3text{
+    width: 100%;
+    max-width: 560px;
+    
+}
+
+.main_pc1img{
+    aspect-ratio: 5/3;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    
+
+}
+
+
+.main_pc2img{
+    aspect-ratio: 5/3; /*寬高5:3*/
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    order: 2;
+}
+
+
+.main_pc3img{
+    aspect-ratio: 5/3;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+
+
+.main_switch.active{
+    
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+   
+
+.main_switch{
+  display: none;
+
+}
+
+/*------------------------第二區分頁--------------------------*/
+
+.main_contint2 {
+    width: 100%;
+    margin-bottom: 160px;
+     
+}
+    
+.main_pc4img{
+    aspect-ratio: 5/3;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+
+}
+
+.main_pc5img{
+    aspect-ratio: 5/3; /*寬高5:3*/
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    order: 2;
+
+}
+
+.main_pc6img{
+    aspect-ratio: 5/3;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    
+}
+
+
+
+/*-------------------------第三區分頁-------------------------*/
+
+
+.main_contint3{
+    width: 100%;
+    margin-bottom: 160px;
+   
+}
+    
+
+.main_pc7img{
+    aspect-ratio: 5/3;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.main_pc8img{
+    aspect-ratio: 5/3; /*寬高5:3*/
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    order: 2;
+}
+
+.main_pc9img{
+    aspect-ratio: 5/3;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    
+}
+

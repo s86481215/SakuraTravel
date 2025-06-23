@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>結帳選單</title>
+</head>
+
+
+<body>
+    <!-----------------------------以下屬於header_nav------------------------------>  
+    <header class="header">
+
+        <div= class="header_content">
+            <div class="logo">
+                <a href="../../home/html/sakure.html"><img src="../../picture/LOGO.svg" alt=""></a>
+            </div>
+
+            <nav class="main_nav">
+                <ul>
+                    <li><a href="../../information/html/information.html">櫻花資訊</a></li>
+                    <li><a href="../../travel/html/travel.html">旅遊地點</a></li>
+                    <li><a href="../../tripplanning/html/trip.html">行程規劃</a></li>
+                    <li><a href="../../food/html/food.html">櫻花美食</a></li>
+                    <li><a href="../../knowledge/html/knowledge.html">趣味知識</a></li>
+                    <li><a href="../../e-mail/html/e-mail.html">櫻-mail</a></li>
+                </ul>
+                <div class="nav_icon">
+                    <a  class= 'icon_1' href="../../Login/html/Login.html"> <i class="fa-regular fa-user"></i> </a>
+                    <a class= 'icon_2'  href="../../shoppingcart/html/shop.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!--------------------------------以下屬於main------------------------------->
+    <main>
+        <div class="main_shoppingcart_banner">
+            <button class="main_theme-switch">
+            <img src="../../picture/sun.svg"  class = "sun" alt="">
+            <img src="../../picture/night.svg" class = "night" alt="">
+            </button>
+        </div>
+
+    <!--------------------------------chrckout-bar----------------------------------->
+
+        <div class="shop_bar">
+            <div class="bar_circle">
+                <div class="circle_1"></div>
+                <p>行程選擇</p>
+            </div>
+
+             <div class="bar_circle_se">
+                <div class="circle_2"></div>
+                <p>購物車</p>
+            </div>
+
+            <div class="bar_circle_th">
+                <div class="circle_3"></div>
+                <p>訂單確認</p>
+            </div>
+
+        </div>
+
+    <!----------------------------------chrckout---------------------------------------->
+        <!-----------------------------商品確認------------------------------------------>
+        <div class="shopping">
+
+            <div class="shop_content">
+
+                <div class="shopptitle">
+                    <h1>商品確認</h1>
+                </div>
+
+                <div class="shopbox">
+                    <div class="shopplist">
+                    <p>五稜郭公園-賞櫻季</p>
+                    </div>
+                    <div class="money">  <p>NT$4,500</p> </div>
+                </div>
+
+                <div class="shopbox">
+                    <div class="shopplist">
+                    <p>上野恩賜公園一日遊</p>
+                    </div>
+                    <div class="money">  <p>NT$5,500</p> </div>
+                </div>
+
+                <div class="shopbox">
+                    <div class="shopplist">
+                    <p>總共金額</p>
+                    </div>
+                    <div class="money">  <p>NT$9,900</p> </div>
+                </div>
+
+            </div>
+
+            <!------------------------------付款方式-------------------------------------->
+            <div class="shop_pay">
+                <div class="shopptitle">
+                    <h1>付款方式</h1>
+                </div>
+
+                <form class="pay_form">
+                    <div class="formone">
+                    <label><input type="radio" name="pay">ATM轉帳</label>
+                    <label><input type="radio" name="pay">超商代碼繳費</label>
+                    </div>
+
+                    <div class="formtwo">
+                    <label><input type="radio" name="pay">信用卡付款</label>
+                    <label><input type="radio" name="pay">貨到付款</label>
+                    </div>
+                </form>
+            </div>
+
+            <!------------------------------買家資訊-------------------------------------->
+                <div class="shop_info">
+
+                    <div class="info_title">
+                        <h1>買家資訊</h1>
+                    </div>
+
+                    <form class="info_form">
+                        <label><input type="checkbox" name="pay">同會員資訊</label>
+                       
+                        <label class="info_text"><input type="text" name="pay"></label>
+                        <label class="info_text"><input type="text" name="pay"></label>
+                        <label class="info_text"><input type="text" name="pay"></label>
+                        
+                    </form>
+
+                    <div class="check_btn">
+                        <button class="check_btn">確定送出</button>
+                       <a href="../../shoppingcart/html/shop.html"><button class="check_btn">返回購物車</button></a> 
+                    </div> 
+            
+                </div>
+        </div>
+
+    </main>
+
+       <!------------------------------footer---------------------------------------->
+        
+        <footer>
+            <div class="footer_content">
+                    <div class="footer_border">
+                            <div class="footer_logo">
+                            <img src="../../picture/LOGO.svg" alt="">
+                            </div>
+
+                        <div class="footer_text">
+                            <h2>電話: 02-2712-0589</h2>
+                            <h3>地址: 104台北市中山區南京東路三段219號</h3>
+                            <h4>信箱: sakura@gmail.com</h4>
+                        </div>
+
+                        <div class="footer_icon">
+                            <a href=""></a><i class="fa-brands fa-line" style="color: #63E6BE;"></i></a>
+
+                            <a href=""></a><i class="fa-brands fa-twitter" style="color: #74C0FC;"></i></a>
+
+                            <a href=""></a> <i class="fa-brands fa-facebook" style="color: #173fde;"></i></a>
+
+                        </div>
+                       
+              
+            
+                    </div>
+            </div>
+
+                    <p>本網站為緯育TibaMe前端工程師班第XX期學員專題作品,本平台僅供學習、展示之用。參考資源: www.wwww.wwwww.com</p>
+
+        </footer>
+
+</body>
+</html>

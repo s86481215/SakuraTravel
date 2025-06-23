@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../food/css/style.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/skafall.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>櫻花美食</title>
+</head>
+<body>
+     <!-----------------------------以下屬於header_nav------------------------------>  
+     <header class="header">
+
+        <div= class="header_content">
+            <div class="logo">
+                <a href="../../home/html/sakure.html"><img src="../../picture/LOGO.svg" alt=""></a>
+            </div>
+
+            <nav class="main_nav">
+                <ul>
+                    <li><a href="../../information/html/information.html">櫻花資訊</a></li>
+                    <li><a href="../../travel/html/travel.html">旅遊地點</a></li>
+                    <li><a href="../../tripplanning/html/trip.html">行程規劃</a></li>
+                    <li><a href="../../food/html/food.html">櫻花美食</a></li>
+                    <li><a href="../../knowledge/html/knowledge.html">趣味知識</a></li>
+                    <li><a href="../../e-mail/html/e-mail.html">櫻-mail</a></li>
+                </ul>
+                <div class="nav_icon">
+                    <a  class= 'icon_1' href="../../Login/html/Login.html"> <i class="fa-regular fa-user"></i> </a>
+                    <a class= 'icon_2'  href="../../shoppingcart/html/shop.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+
+       
+<!-----------------------------------main--------------------------------------------->
+
+    <main>
+         <div class="main_food_banner">
+              <button class="main_theme-switch">
+          <img src="../../picture/sun.svg"  class = 'sun' alt="">
+          <img src="../../picture/night.svg" class = 'night 'alt="">
+        </button>
+
+      
+         </div>
+
+        <div class="main_btn">
+            <button onclick="switchfood('contint'); roll('Yokan')">羊羹</button>
+            <button onclick="switchfood('contint'); roll('cake')">蛋糕</button>
+            <button onclick="switchfood('contint2'); roll('dump')">糰子</button>
+            <button onclick="switchfood('contint2'); roll('cookies')">餅乾</button>
+            <button onclick="switchfood('contint3'); roll('Sakura_cake')">櫻餅</button>
+            <button onclick="switchfood('contint3'); roll('jelly')">果凍</button>
+            
+        </div>
+<!----------------------------------圖片1---------------------------------------------->
+        <div id="contint" class="main_contint main_switch active" >
+           
+            <div class="main_pcbox">
+
+                <div class="main_pc1" id='Yokan' >
+
+                     <div class="main_pc1img">
+                        <img src="../../picture/03.png" alt="">
+                    </div>
+
+                    <div class="main_pc1text">
+                        <h1>抹茶櫻花羊羹</h1>
+                        <p>傳統日式羊羹融合香濃抹茶與淡雅櫻花,細膩Q彈的口感,甜度恰到好處。咬下去能感受到抹茶的清新與花香的層次，無論是下午茶或作為伴手禮，都是體驗日式風情的好選擇。</p>
+                    </div>
+
+                </div>
+
+           
+
+                <div class="main_pc2" id='cake'>
+
+                    <div class="main_pc2img">
+                        <img src="../../picture/櫻花抹茶蛋糕.jpg" alt="">
+                    </div>
+
+                    <div class="main_pc2text">
+                        <h1>櫻花抹茶海綿蛋糕</h1>
+                        <p>粉嫩櫻花慕斯與香草、乳酪層層堆疊，每一口都充滿細緻綿密的口感。入口時淡雅櫻花香緩緩散發，讓人彷彿置身春日花海。這道蛋糕不僅視覺夢幻，也是賞櫻季節最受歡迎的限定甜點。</p>
+                    </div>
+
+                </div>
+
+                <div class="main_pc3">
+
+                    <div class="main_pc3img"> 
+                        <img src="../../picture/櫻花冰心大福.jpg" alt="">
+                    </div> 
+
+                    <div class="main_pc3text">
+                        <h1>抹茶櫻花瑞士捲</h1>
+                        <p>蓬鬆抹茶蛋糕捲入粉嫩櫻花奶油餡，視覺與味覺層層交織。茶香濃郁，花香清新，每一口都能感受到春天的氣息。推薦搭配熱茶享用，讓口感更加細緻，令人回味無窮。</p>
+                    </div>
+
+                </div>
+            </div>    
+        </div>  
+            
+
+        
+<!----------------------------------圖片2---------------------------------------------->
+ 
+    <div id='contint2'class="main_contint2 main_switch">
+
+                <div  class="main_pc1" id="dump">
+
+                    <div class="main_pc4img">
+                        <img src="../../picture/花見團子.jpeg" alt="">
+                    </div>
+
+                    <div class="main_pc1text">
+                        <h1>花見三色丸子</h1>
+                        <p>三色糰子分別象徵春天的櫻花、嫩芽與純淨,口感Q彈、甜味適中。外型繽紛討喜,是日本花見時期不可或缺的小吃。無論搭配熱茶或作為野餐甜點,都能為賞花增添樂趣。</p>
+                    </div>
+
+                </div>
+
+                <div  class="main_pc2">
+
+                    <div class="main_pc5img">
+                        <img src="../../picture/櫻花串糰子.jpg" alt="">
+                    </div>
+
+                    <div class="main_pc2text">
+                        <h1>櫻花餅乾與甜點組合</h1>
+                        <p>以櫻花為主題的手工餅乾與各式和菓子，香酥細膩、造型精美。淡淡花香與適中的甜度，是伴手禮或下午茶的理想選擇。每一口都能感受到春日氣息，帶來愉悅好心情。</p>
+                    </div>
+
+                </div>
+
+
+                <div  class="main_pc3">
+
+                    <div class="main_pc6img" id="cookies"> 
+                        <img src="../../picture/葛櫻餅.jpg" alt="">
+                    </div> 
+
+                    <div class="main_pc3text">
+                        <h1>櫻花甘酒與小點心</h1>
+                        <p>櫻花甘酒是一種融合鹽漬櫻花與米麴釀製的傳統飲品，呈現出夢幻的粉色。風味溫潤甘甜，帶有淡淡的花香與米香。搭配日式小點心，無論冷飲或熱飲，都能為賞花時光增添一抹柔和的春日氛圍</p>
+                    </div>
+
+                </div>
+
+    </div> 
+<!---------------------------------圖片3------------------------------------------>
+
+<div id="contint3" class="main_contint3 main_switch">
+
+                <div  class="main_pc1" id="Sakura_cake">
+
+                    <div class="main_pc7img"><img src="../../picture/03_2.jpg" alt=""></div>
+                    <div class="main_pc1text">
+                        <h1>傳統櫻葉餅</h1>
+                        <p>傳統櫻葉餅以柔軟的麻糬外皮包裹細緻紅豆餡，外層再用鹽漬櫻葉捲起。咬下時可感受到櫻葉特有的鹹香和櫻花的微妙清香，甜而不膩、層次分明，是日本春天最具代表性的和菓子之一。</p>
+                    </div>
+                </div>
+
+                <div class="main_pc2">
+
+                    <div class="main_pc8img">
+                        <img src="../../picture/03_1.jpeg" alt="">
+                    </div>
+
+                    <div class="main_pc2text">
+                        <h1>櫻花道明寺糯米餅</h1>
+                        <p>櫻花道明寺糯米餅採用道明寺糯米製成,外觀透明微紅,內餡為細膩紅豆。特別之處在於糯米顆粒分明,口感Q彈有嚼勁。外層包裹鹽漬櫻葉,花香與糯米香交織,是春季不可錯過的經典賞花點心。</p>
+                    </div>
+
+                </div>
+
+                <div  class="main_pc3" id="jelly">
+
+                    <div class="main_pc9img"> 
+                        <img src="../../picture/櫻花香水色果凍.jpg" alt="">
+                    </div> 
+
+                    <div class="main_pc3text">
+                        <h1>櫻花果凍</h1>
+                        <p>這款櫻花果凍選用春季限定的鹽漬櫻花入味，果凍質地柔嫩滑順，入口即化，帶有淡淡的櫻花清香與微甜口感，視覺與味覺兼具。搭配典雅花盤，更顯日式風情，是賞櫻時節最應景的夢幻甜點。</p>
+                    </div>
+
+                </div>
+           
+ </div> 
+
+   
+            <!----------這是櫻花的空盒子------------>
+
+         <div class="sakubox"></div> 
+
+</main>
+<!--------------------------------------footer------------------------------------------------>
+ <footer>
+        <div class="footer_content">
+            <div class="footer_border">
+                <div class="footer_logo">
+                     <img src="../../picture/LOGO.svg" alt="">
+                </div>
+
+                <div class="footer_text">
+                    <h2>電話: 02-2712-0589</h2>
+                    <h3>地址: 104台北市中山區南京東路三段219號</h3>
+                    <h4>信箱: sakura@gmail.com</h4>
+                </div>
+
+                <div class="footer_icon">
+                    <a href=""></a><i class="fa-brands fa-line" style="color: #63E6BE;"></i></a>
+                    <a href=""></a><i class="fa-brands fa-twitter" style="color: #74C0FC;"></i></a>
+                    <a href=""></a> <i class="fa-brands fa-facebook" style="color: #173fde;"></i></a>
+                </div>
+            </div>
+        </div>
+                <div>
+                    <p>本網站為緯育TibaMe前端工程師班第XX期學員專題作品,本平台僅供學習、展示之用。參考資源: www.wwww.wwwww.com</p>
+                </div>
+    </footer>
+ <!---------------------------------------JS區----------------------------------------------->
+ 
+<script src="../../js/sakure.js"></script>
+<script>  
+
+   function  switchfood(id){
+        document.querySelectorAll('.main_switch').forEach(item => {item.classList.remove('active')});
+        document.getElementById(id).classList.add('active');} 
+    
+    function roll(id){
+        let tarage = document.getElementById(id);
+        if(tarage){
+            tarage.scrollIntoView({behavior: 'smooth'});
+        }
+
+    }
+</script>
+
+
+
+
+</body>
+</html>

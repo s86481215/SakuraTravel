@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../information/css/style.css">
+    <link rel="stylesheet" href="../../css/skafall.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>櫻花資訊</title>
+</head>
+<body>
+     <!-----------------------------以下屬於header_nav------------------------------>  
+     <header class="header">
+
+        <div= class="header_content">
+            <div class="logo">
+                <a href="../../home/html/sakure.html"><img src="../../picture/LOGO.svg" alt=""></a>
+            </div>
+
+            <nav class="main_nav">
+                <ul>
+                    <li><a href="../../information/html/information.html">櫻花資訊</a></li>
+                    <li><a href="../../travel/html/travel.html">旅遊地點</a></li>
+                    <li><a href="../../tripplanning/html/trip.html">行程規劃</a></li>
+                    <li><a href="../../food/html/food.html">櫻花美食</a></li>
+                    <li><a href="../../knowledge/html/knowledge.html">趣味知識</a></li>
+                    <li><a href="../../e-mail/html/e-mail.html">櫻-mail</a></li>
+                </ul>
+                <div class="nav_icon">
+                    <a  class= 'icon_1' href="../../Login/html/Login.html"> <i class="fa-regular fa-user"></i> </a>
+                    <a class= 'icon_2'  href="../../shoppingcart/html/shop.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+<!---------------------------------以下icon----------------------------------------->
+   
+
+  
+<!---------------------------------以下屬於main------------------------------------>
+
+<!---------------------------------以下屬於按鈕區------------------------------------>
+<main>
+
+   <div class ="main_information_banner">
+     <button class="main_theme-switch">
+          <img src="../../picture/sun.svg"  class = 'sun' alt="">
+          <img src="../../picture/night.svg" class = 'night 'alt="">
+        </button>
+   </div>     
+
+    <div class="main_map">
+        <img src="../../picture/map.png" alt="">
+    </div>
+
+    <div class="main_content">
+
+        <div class="main_btn">
+            <button onclick="swicthflow('kawazu')">河津櫻</button>
+            <button onclick="swicthflow('yae')">八重櫻</button>
+            <button onclick="swicthflow('kanhi')">山櫻花</button>
+            <button onclick="swicthflow('yoshino')">吉野櫻</button>
+        </div>
+
+<!---------------------------------以下屬於圖片區------------------------------------>
+        <div class="flow_wapper">
+
+         <!--這裡很重要active不是class的名稱 這邊的表示他等於有兩種類別 main_flow 跟 active 因為class名稱中間是不能有空白字元 他們中間出現了空白字元 所以css的認知中會把他們當成兩種類別 這也是用來按鈕切換的關鍵!--->
+<!---河津櫻--->
+        <div id="kawazu" class="main_flow active">
+            <p> <span>河津櫻</span> 是日本一種早開的櫻花品種，以鮮豔的粉紅色花朵和較長的開花期聞名。通常在每年 2 月上旬至 3 月上旬盛開，比染井吉野櫻等常見品種更早。河津櫻由大島櫻與寒緋櫻自然交配而成,花瓣較大且呈深粉紅色。1955 年，它在靜岡縣賀茂郡河津町被偶然發現，因此命名為「河津櫻」。此品種的花色多呈桃粉紅色，且每年 2 月上旬開始綻放，花期可持續約一個月，使人們能在初春便欣賞到櫻花的美景。</p>
+            <img src="../../picture/04_2.jpg" class='blurflow' onclick="unblur(this)" alt="">
+        </div>
+<!---八重櫻--->
+
+          <div id="yae" class="main_flow">
+            <p> <span>八重櫻</span> 日語（やえざくら）是重瓣櫻花的統稱，並非特定的品種名稱，其種類繁多，其中較為常見的包括關山櫻、普賢象櫻、八重紅枝垂櫻等。這類櫻花的花瓣層疊，數量超過五枚，有些甚至細密如菊花，因此也被稱為菊櫻。根據資料，八重櫻涵蓋許多不同的櫻花品種，例如關山櫻與普賢象櫻，其中菊櫻則因其花瓣極多且細緻，形狀類似菊花而得名。相較於染井吉野櫻，八重櫻的開花時間較晚，花期也較長，使人們在染井吉野櫻凋謝後仍能繼續欣賞春日的櫻花美景。</p>
+            <img src="../../picture/04_3.jpg" class='blurflow' onclick="unblur(this)" alt="">
+          </div>
+
+<!---山櫻花--->
+          <div id="kanhi" class="main_flow">
+            <p> <span>山櫻花</span> 又稱緋寒櫻，是壽命僅次於江戶彼岸櫻的第二長壽品種，但從發芽到開花所需時間相當長。其花朵為中型單瓣櫻，每朵擁有五枚淡紅色花瓣，花朵數量較少，花期約在 3 月下旬至 4 月中旬，並與紅褐色新葉的發芽同步開花，與「先開花後長葉」的染井吉野櫻截然不同。在日本，山櫻是原生且常見的櫻花品種，廣泛分布於山區，尤其在關東、中部及南部地區。它以開花時同時長出葉子的特點，以及豐富的花色變化而聞名，花色包含白色、淡粉色、深粉色，甚至部分花朵頂端呈深色。山櫻花在日本文化中具有重要地位，自古以來便是和歌與詩歌中讚頌的對象，被視為櫻花之祖，承載著深厚的歷史與文化意義。</p>
+            <img src="../../picture/04.jpg" class='blurflow' onclick="unblur(this)" alt="">
+        </div>
+<!---吉野櫻--->
+
+          <div id="yoshino" class="main_flow">
+            <p> <span>吉野櫻</span> 學名 Prunus_yedoensis,又稱東京櫻花或日本櫻花，是一種高大樹木，可達 10 至 15 公尺，開花時呈淡粉紅色，花瓣為單瓣，通常 4 至 5 朵形成總狀花序。萼片、花梗及小花柄上覆有細毛，萼筒上部較細，花蕾呈粉紅色，在葉子長出前便盛開，花色略帶淡紅，完全綻放時逐漸轉白。染井吉野櫻喜愛較涼爽的氣候，在低海拔地區較不易栽種，其中阿里山森林遊樂區為台灣種植最為密集之地，其花期約在 3 至 4 月，三月中旬開始含苞待放，至三月底進入盛開期，為最佳觀賞時機。吉野櫻是日本最普遍的櫻花品種,普遍認為它是由日本原生種大島櫻 (Prunus speciosa) 與江戶彼岸櫻 (Prunus subhirtella) 雜交而成，並分別繼承了花朵較大及先花後葉的特性。此品種栽培歷史悠久，也是日本在海外移植最多的櫻花，象徵意義深厚，廣受喜愛，被視為極具代表性的觀賞植物。</p>
+            <img src="../../picture/04_1.jpg" class='blurflow' onclick="unblur(this)" alt="">
+          </div>
+
+        </div>
+
+    </div>
+        <!----------這是櫻花的空盒子------------>
+
+         <div class="sakubox"></div> 
+
+</main>
+
+<!------------------------------footer--------------------------------->
+  <footer>
+        <div class="footer_content">
+            <div class="footer_border">
+                <div class="footer_logo">
+                     <img src="../../picture/LOGO.svg" alt="">
+                </div>
+
+                <div class="footer_text">
+                    <h2>電話: 02-2712-0589</h2>
+                    <h3>地址: 104台北市中山區南京東路三段219號</h3>
+                    <h4>信箱: sakura@gmail.com</h4>
+                </div>
+
+                <div class="footer_icon">
+                    <a href=""></a><i class="fa-brands fa-line" style="color: #63E6BE;"></i></a>
+                    <a href=""></a><i class="fa-brands fa-twitter" style="color: #74C0FC;"></i></a>
+                    <a href=""></a> <i class="fa-brands fa-facebook" style="color: #173fde;"></i></a>
+                </div>
+            </div>
+        </div>
+                <div>
+                    <p>本網站為緯育TibaMe前端工程師班第XX期學員專題作品,本平台僅供學習、展示之用。參考資源: www.wwww.wwwww.com</p>
+                </div>
+    </footer>
+
+
+        <!-----------------------------------JS區------------------------------>
+
+    <script src="../../js/sakure.js"></script>
+    <script>    
+    function swicthflow(id){
+        document.querySelectorAll('.main_flow').forEach(item => {item.classList.remove('active')});
+        document.getElementById(id).classList.add('active');} 
+        /*
+        利用document.querySelectorAll 選取css屬性 (這個是指令用來選class名稱 不是選 ID 兩者有差別)
+        首先分別命名main_flow active 跟 main_flow 兩種類型  一開始main_flow 增加 active
+        會變成main_flow active 狀態下的畫面，這個畫面理輪上只會出現一個 所以畫面就只會一個 其他的main_flow因為沒有active的屬性所以就自然被隱藏不會顯示
+        顯示的畫面叫做main_flow active 利用function移出 main_flow active的active 盡而讓它隱藏
+        把active加給我點選的頁面盡而讓它顯示  (顯示跟隱藏都是靠CSS的指令去達成 JS只負責做選取)
+        document.getElementById這個指令選取對應的id的main_flow + active 記住active是多一個類別!!!
+        所以最後的畫面的class會從　main_flow　→　main_flow active　注意！active中間是有空白的 所以他不會被當成class一整個名稱!!
+        這就是html的寫法!!  在css的寫法是用 .active來選擇第二個類別!!!!
+        */
+    function unblur(blurflow){
+        blurflow.classList.add('unblur'); }
+        /*跟上面一樣的方法，差別在於上面是從初始狀態 兩個屬性 → 一個屬性 → 在變兩個屬性(最後畫面呈現的狀態)
+        而這邊是讓一開始一個屬性→ 兩個屬性 最後呈現是符合 兩個屬性 都有的畫面的狀態(狀態呈現一樣取決於CSS怎麼寫!!)
+        */
+    </script>
+
+
+</body>
+
+</html>

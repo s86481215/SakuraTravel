@@ -1,0 +1,211 @@
+
+.maincontent.active{                             /*loginui*/
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 160px;
+    width: 100%;
+}
+
+.main_box{
+    border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    
+}
+
+
+
+.login_register_btn{
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login,
+.register{
+    width: 50%;
+    color: #E91956;
+    font-size: 1.3rem;
+    background-color: #FFB2C1;
+    border:#A7D3E0;
+    cursor: pointer;
+}
+
+
+
+.main_inputbox{
+    display: flex;
+    flex-direction: column;
+    gap:100px;
+    margin-bottom: 40px;
+}
+
+.main_loginbox h2{
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    color: #B25A74;
+}
+
+.account{
+     margin-bottom: 30px;
+}
+
+.password{
+    margin-bottom: 30px;
+}
+
+.accoun_input,
+.password_input {
+    width: 350px;
+    height: 20px;
+    border-radius: 60px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+    border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
+}
+
+.accoun_input::placeholder{
+    color: #cccccc7b;
+}
+
+.password_input::placeholder{
+    color: #cccccc7b;
+}
+
+
+.main_button{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_button button{
+    
+    border-radius: 15px;
+    color: #ea215d;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color:color-mix(in srgb, #FFB2C1 50%, #FF6F91 50%);
+    cursor: pointer;
+    border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
+    margin-bottom: 30px;
+}
+
+.pass{
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*-------------------Third-party--------------------------*/
+
+.Third-party{
+  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Third-party_login{
+    
+    position: relative;
+}
+
+.Third-party_login::after{
+
+    content: '';
+    display: block;
+    border-bottom: 2px solid black;
+    width: 130px;
+    margin: 8px 0;
+    position: absolute;
+    top: 0px;
+    left: 105%;  
+}
+
+.Third-party_login::before{
+
+    content: '';
+    display: block;
+    border-bottom: 2px solid black;
+    width: 130px;
+    margin: 8px 0;
+    position: absolute;
+    top: 0px;
+    right: 105%;  
+}
+
+
+.Third-party_icon{
+    display: flex;
+    gap: 30px
+}
+
+.fa-brands{
+    
+    font-size: 1.7rem;
+}
+
+.fa-facebook{
+    color: #4A90E2;
+}
+
+.fa-line{
+    color: rgb(46, 210, 21);
+}
+
+.fa-google{
+    background: linear-gradient(90deg,#4285F4 0%,#34A853 25%,#FBBC05 50% ,#EA4335 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+
+}
+
+button:hover{
+    color: #020202;
+    transform: translateY(-4px);
+}
+
+/*------------------register-----------------*/
+
+.maincontent {                            
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 160px;
+    width: 100%;
+    display: none;
+   
+}
+
+.login_register_btn button{
+    opacity: 0.3;
+    color: #E91956;
+}
+
+
+.login_register_btn button.active{
+    color: #E91956;
+    opacity: 1;
+
+}
+

@@ -1,0 +1,329 @@
+.main_picture{
+    max-width: 1300px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.main_picture h3{
+    color: #B25A74;
+    margin-bottom: 12px;}
+
+.main_picture p{
+    color: #54494B;
+    line-height: 1.6;
+    
+}
+
+.subtitle{
+    color: #FFB2C1;
+    font-size: 20px;
+    font-weight:400;
+    margin-bottom: 16px;
+
+
+}
+
+/*--------------------------以上共用區-----------------------------*/
+
+
+.main_title{
+    color: #B25A74;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 36px;
+    font-size: 2rem;
+}
+
+.main_title h1{}
+
+/*--------------------------關東--------------------------------*/
+.first_row{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 16px;
+    margin-bottom: 36px;
+}
+
+.main_pc1{ 
+    display: flex;
+    width: 100%;    
+    max-width: 650px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.Kanto{
+    display: flex;
+    width: 100%;
+    gap: 12px;
+}
+
+.Kanto li {
+    max-width:400px; 
+    padding: 4px;
+    text-align: center;
+}
+
+.Kanto img{
+    width: 100%;
+    aspect-ratio: 3/2.5;
+    margin-bottom: 12px;
+    border-radius: 45%;   
+}
+
+
+
+/*------------------------中部---------------------------------*/
+.main_pc2{
+    display: flex;
+    width: 100%;    
+    max-width: 650px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+
+.Chubu{
+    display: flex;
+    width: 100%;
+    gap: 12px;
+}
+
+.Chubu li {
+    max-width:400px; 
+    padding: 4px;
+    text-align: center;
+}
+
+
+.Chubu img{
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 3/2.5;
+    margin-bottom: 12px;
+    border-radius: 45%;
+    
+}
+
+/*------------------------東北------------------------------------*/
+
+.second_row {
+    
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 16px;
+    margin-bottom: 36px;
+}
+
+.main_pc3{
+    display: flex;
+    width: 100%;    
+    max-width: 650px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.Northeast{display: flex;
+    width: 100%;
+    gap: 12px;}
+
+.Northeast li{
+     max-width:400px; 
+    padding: 4px;
+    text-align: center;
+}
+
+.Northeast img{
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 3/2.5;
+    margin-bottom: 12px;
+    border-radius: 45%;
+}
+
+/*--------------------------關西------------------------------*/
+
+.main_pc4{
+    display: flex;
+    width: 100%;    
+    max-width: 650px;
+    box-sizing: border-box;
+    flex-direction: column;
+
+}
+
+.Kansai{
+    display: flex;
+    width: 100%;
+    gap: 12px;}
+
+.Kansai li{
+    max-width:400px; 
+    padding: 4px;
+    text-align: center;
+}
+
+.Kansai img {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 3/2.5;
+    margin-bottom: 12px;
+    border-radius: 45%;
+}
+
+/*------------------------東北-------------------------------*/
+.third_row {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 16px;
+    margin-bottom: 36px;
+    justify-content: center;
+}
+
+.main_pc5{
+    display: flex;
+    width: 100%;    
+    max-width: 650px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.Hokkaido { 
+    display: flex;
+    width: 100%;
+    gap: 12px;
+}
+
+.Hokkaido li { 
+    max-width:400px; 
+    padding: 4px;
+    text-align: center;}
+
+.Hokkaido img {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 3/2.5;
+    margin-bottom: 12px;
+    border-radius: 45%;
+}
+
+
+/*-------------------------trip--------------------------*/
+ 
+.trip {
+    width: 100%;
+    max-width: 1300px;
+    box-sizing: border-box;
+    margin: 0 auto 160px;
+    }
+
+.trip_title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 100px;
+    margin-top: 160px;
+}
+
+.trip_title h4{
+    color:#B25A74;
+    font-weight: bold;
+}
+
+.trip_par1{
+    display: flex;
+    max-width: 1300px;
+    margin-bottom: 160px;
+    align-items: center;
+}
+
+.trip_par2{
+    display: flex;
+    max-width: 1300px;
+    margin-bottom: 160px;
+    align-items: center;
+}
+
+.trip_img{
+    max-width: 500px;
+    padding-left: 60px;
+
+   
+}
+
+.trip_img img{
+    aspect-ratio: 3/2.5;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+   
+
+}
+.trip_text h5 {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+    color: #B25A74;
+    font-weight: 500;
+
+}
+.trip_text p{
+    color: #54494B;
+    line-height: 1.6;
+}
+
+.trip_text{
+    text-align: center;
+    padding: 36px 60px;
+    order: 1;
+}
+
+.trip_par1>.trip_img{
+    padding-right: 60px;
+    order: 2;
+}
+
+/*-------------------------地圖彈窗--------------------------*/
+.mapouline{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.57);
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map_content{
+    width: 600px;
+    height: 450px;
+    position: relative;
+
+}
+
+.close{
+    width: 24px;
+    height: 24px;
+    background-color: rgb(132, 27, 206);
+    border-radius: 50%;
+    font-size: 30px;
+    position: absolute;
+    top:4;
+    right:0;
+    cursor: pointer;
+    text-align: center;
+    line-height: 24px;
+}
+/*------------------------hover------------------------*/
+
+.travel_img:hover{
+    cursor: pointer;
+    scale: 1.2;
+}
