@@ -124,6 +124,7 @@ main p{
     width: 100%;
     max-width: 500px;
     overflow: hidden;
+    transform: rotate(10deg)
     
 
 }
@@ -135,6 +136,7 @@ main p{
     max-width: 500px;
     overflow: hidden;
     order: 2;
+    transform: rotate(-10deg)
 }
 
 
@@ -143,6 +145,7 @@ main p{
     width: 100%;
     max-width: 500px;
     overflow: hidden;
+    transform: rotate(10deg)
 }
 
 
@@ -176,6 +179,8 @@ main p{
     width: 100%;
     max-width: 500px;
     overflow: hidden;
+    transform: rotate(10deg);
+    border-radius: 15%;
 
 }
 
@@ -185,6 +190,8 @@ main p{
     max-width: 500px;
     overflow: hidden;
     order: 2;
+    transform: rotate(-10deg);
+    border-radius: 15%;
 
 }
 
@@ -193,6 +200,8 @@ main p{
     width: 100%;
     max-width: 500px;
     overflow: hidden;
+    transform: rotate(10deg);
+    border-radius: 15%;
     
 }
 
@@ -204,6 +213,7 @@ main p{
 .main_content3{
     width: 100%;
     margin-bottom: 160px;
+    
    
 }
     
@@ -213,6 +223,8 @@ main p{
     width: 100%;
     max-width: 500px;
     overflow: hidden;
+    transform: rotate(-10deg);
+    border-radius: 25%;
 }
 
 .main_pc8img{
@@ -221,6 +233,8 @@ main p{
     max-width: 500px;
     overflow: hidden;
     order: 2;
+    transform: rotate(10deg);
+    border-radius: 25%;
 }
 
 .main_pc9img{
@@ -228,6 +242,8 @@ main p{
     width: 100%;
     max-width: 500px;
     overflow: hidden;
+    transform: rotate(-10deg);
+    border-radius: 25%;
     
 }
 
