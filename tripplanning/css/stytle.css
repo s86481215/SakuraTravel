@@ -55,7 +55,6 @@ main{
 }
 
 .day_input,
-.place_input,
 .person_input {
     width: 350px;
     height: 20px;
@@ -64,7 +63,27 @@ main{
     padding: 10px;
     font-size: 1rem;
     border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
+
+    line-height: 20px;
 }
+
+input[type='date']::-webkit-calendar-picker-indicator{
+    position: relative;  /* 開啟"可以自己調整位置"模式 */
+    right: -7px;         /* 向右推 10px */
+}
+.place_input{
+    width: 370px;
+    height: 40px;
+    border-radius: 60px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
+    line-height: 20px;
+    padding: 10px;
+
+
+}
+
 
 .day_input::placeholder{
     color: #cccccc7b
