@@ -60,7 +60,7 @@
 
         <!----------------------loginbtn------------------------------------------------->
 
-            <div id='signin' class="maincontent  active">
+            <div id='signin' class="maincontent  active">  <!-------整體的登入頁面----------->
 
                 <div class="main_box">
                     <div  class="login_register_btn">
@@ -115,7 +115,7 @@
             </div>
         <!-------------------------register---------------------------->
 
-            <div id ='reg' class="maincontent">
+            <div id ='reg' class="maincontent">            <!----------------整體的註冊頁面------------------->
                 <div class="main_box">
                     <div class="login_register_btn">
                         <button class="login ">會員登入</button>
@@ -202,26 +202,58 @@
 <!---------------------js區--------------------------------->
     <script src="../../js/sakure.js"></script>
     <script>
-        const login = document.querySelectorAll('.login');
-        const register = document.querySelectorAll('.register');
-        const logincontent = document.querySelector('#signin');
-        const registercontent = document.querySelector('#reg');
+        const login = document.querySelectorAll('.login');   //抓登入頁面按鈕
+        const register = document.querySelectorAll('.register');  //抓註冊頁面按鈕
+        const logincontent = document.querySelector('#signin');   //抓登入頁面
+        const registercontent = document.querySelector('#reg');   //抓註冊頁面
 
-    login.forEach(logbtn => {
-    logbtn.addEventListener('click',function(){
-        login.forEach(btn=>btn.classList.add('active'));
-        register.forEach(btn=>btn.classList.remove('active'));
-        logincontent.classList.add('active');
-        registercontent.classList.remove('active');});
+    login.forEach(logbtn => {                        
+    logbtn.addEventListener('click',function(){   //幫全部登入按鈕都掛上點擊事件監聽
+        login.forEach(btn=>btn.classList.add('active'));    //點擊到的按鈕激活css樣式
+        register.forEach(btn=>btn.classList.remove('active'));  //移出全部註冊按鈕的active下的樣式
+        logincontent.classList.add('active');     //讓登入頁面顯示(在CSS裡增加加了active的畫面應該是display;flex
+        registercontent.classList.remove('active');});  //移出註冊畫面的active = 隱藏頁面
     });
 
-    register.forEach(regbtn =>{
-    regbtn.addEventListener('click',function(){
-        register.forEach(btn=>btn.classList.add('active'));
-        login.forEach(btn=>btn.classList.remove('active'));
-        registercontent.classList.add('active');
-        logincontent.classList.remove('active');});
+    register.forEach(regbtn =>{                    
+    regbtn.addEventListener('click',function(){   //幫所有註冊頁面按鈕掛上點擊監聽事件
+        register.forEach(btn=>btn.classList.add('active'));   //激活註冊按鈕的點擊樣式(CSS套用)
+        login.forEach(btn=>btn.classList.remove('active'));  //移除登入按鈕的樣式(因為沒按他 所以他不能亮)
+        registercontent.classList.add('active');      //顯示註冊的畫面(增加active)
+        logincontent.classList.remove('active');});   //移除登入介面顯示(去掉active)
     });
+
+
+
+/*   
+    這個寫法超級大陷阱!!! 雖然註冊跟登入頁面看似只有兩個按鈕 
+    所以用單一選取去選元素 但這是錯的 !! 大錯特錯
+    假設現在我在登入頁面會有登入跟註冊  但我切到註冊頁面後 也會有一個登入跟註冊(被displaynone了所以察覺不到)
+    這兩個按鈕其實是兩組按鈕 他們一樣卻又完全都是獨立個體 所以其實會有4個按鈕!!
+    這是大陷阱 要用ALL!!!
+
+    login.addEventListener('click', () => {
+    login.classList.add('active');
+    register.classList.remove('active');
+    logincontent.classList.add('active');
+    registercontent.classList.remove('active');
+    });
+
+    register.addEventListener('click', () => {
+    register.classList.add('active');
+    login.classList.remove('active');
+    registercontent.classList.add('active');
+    logincontent.classList.remove('active');
+    });
+*/
+
+
+
+
+
+
+
+
     </script>
 
     

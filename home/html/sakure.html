@@ -78,11 +78,11 @@
                 <p>日本賞櫻景點眾多，其中京都府立植物園、哲學之道、姬路城、代代木公園、河津、沖繩、弘前城公園、井之頭公園等地最受歡迎。
                 這些地點各具特色，有的以古城與櫻花相映成趣，有的以河畔櫻花聞名，也有都市中的絕佳賞櫻去處。本網站將介紹前十大熱門區域，並提供購票系統服務。</p>
             </div>
-                    
-            <div id='splideimg'    class="splide">
-                <div class="splide__track">
-                    <div class="main_pc2_img splide__list">                            
-                        <img src="../../picture/02.png" class='splide__slide' alt="弘前公園（青森縣）"> 
+                                          
+            <div id='splideimg'    class="splide">             <!-------splide為輪播最外層的框 它的功能就是單純的告訴JS他是輪播DIV------>
+                <div class="splide__track">                          <!--------splide__track輪播區域 應該這麼解釋 所有的輪播徒都在這個限定的區域輪播---->
+                    <div class="main_pc2_img splide__list">               <!-----splide__list 輪播清單(容器) 輪播的內容會在這裏面 JS控制這個裡面的內容輪播----->             
+                        <img src="../../picture/02.png" class='splide__slide' alt="弘前公園（青森縣）">   <!------- splide__slide 每個輪播的項目 ------->
                         <img src="../../picture/02_1.png" class='splide__slide' alt="山梨縣">
                         <img src="../../picture/02_2.png" class='splide__slide' alt="五稜郭公園">                           
                     </div>
@@ -173,12 +173,12 @@
 <script src="../../js/sakure.js"></script>
 <script src="../../js/splide.min.js"></script>
 
-<script> document.addEventListener('DOMContentLoaded',function(){
-        new Splide('#splideimg',{
-            type:'slide',
-            perPage: 1,
-            autoplay:false,
-        }).mount();
+<script> document.addEventListener('DOMContentLoaded',function(){    //「DOMContentLoaded 只能等標籤都到定位，就開始啟動；它本身沒幹嘛，只是一個啟動語，告訴 JS 說可以動了」
+        new Splide('#splideimg',{               //去抓輪播的區域
+            type:'slide',                    //輪播 可選值有 'slide'、'loop'、'fade' 分別為 輪播 循環 跟 淡入淡出
+            perPage: 1,                       //每次一張
+            autoplay:false,                  //不自動
+        }).mount();                      //啟動輪播
 
         new Splide('#splide2_img',{
             type:'slide',

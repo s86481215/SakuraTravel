@@ -118,6 +118,6 @@ main{
     filter: blur(0px); /*數字0清楚*/
 }
 
-.blurflow.unblur{
+.blurflow.unblur{  /*(加上unblur清楚)*/
     filter: blur(0px);
 }

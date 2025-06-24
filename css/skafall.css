@@ -4,9 +4,9 @@ body{
 }
 
 .sakucon{
-    position: fixed;
+    position: fixed; /*固定櫻花從上往下飄落*/
     top: -50px;   /*讓櫻花從螢幕之外出來 呈現自然感*/
-    width: 12px;
+    width: 12px;  /*預設櫻花大小*/
     height: 12px;
     background-image: url(../picture/櫻花.svg);
     background-size: contain;
@@ -14,7 +14,7 @@ body{
     pointer-events:none;  /*禁止滑鼠事件干擾*/
     z-index: 1000;
     animation: fall linear infinite;  /*固定速率  次數無限飄落  */
-    overflow: hidden;
+    overflow: hidden; /*讓櫻花不要飄出螢幕外*/
 }
 
 @keyframes fall {

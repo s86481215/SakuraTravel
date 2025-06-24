@@ -271,23 +271,23 @@
     <!---------------------js區--------------------------------->
     <script src="../../js/sakure.js"></script>
     <script>    
-        const mapck = document.querySelectorAll('.travel_img');
-        const openmap = document.querySelector('.mapouline');
-        const close = document.querySelector('.close');
-        const iframe = document.querySelector('.map_content iframe');
+        const mapck = document.querySelectorAll('.travel_img');  //先取得所有travel_img元素
+        const openmap = document.querySelector('.mapouline');   //googole的div 話劇話說 地圖彈窗一樣取的這個元素
+        const close = document.querySelector('.close');        //這個是叉叉..取得叉叉元素.....
+        const iframe = document.querySelector('.map_content iframe');  //ifram..鑲入地圖重要的標籤 取得元素
     
    
 
-        mapck.forEach(img => { img.addEventListener("click",function(){
-            let mapurl = img.getAttribute('data-map');
-            iframe.src = mapurl;
-            openmap.style.display = 'flex';
+        mapck.forEach(img => { img.addEventListener("click",function(){  //為每個img掛上事件監聽
+            let mapurl = img.getAttribute('data-map');     //點擊到的img裡data-map=googleMAP的網址 我要把他給mapurl(變數存放網址)
+            iframe.src = mapurl;                       // iframe再html已經先設定好寬高了 再加上網址可以開啟地圖 這串就是加上網址
+            openmap.style.display = 'flex';           //顯示地圖彈窗=顯示地圖
             });
           });
 
-        close.addEventListener('click',function(){
-            openmap.style.display='none';
-            iframe.src='';
+        close.addEventListener('click',function(){  //幫叉叉掛事件監聽...
+            openmap.style.display='none';     //叉叉被點到後要關閉 = none
+            iframe.src='';                //清空iframe的網址 避免殘留重疊地圖錯亂
                 });
 
     </script>

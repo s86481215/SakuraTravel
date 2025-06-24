@@ -1,7 +1,8 @@
-            const  sakfall = document.querySelector('.sakubox');   // 這行是抓取sakubox地個元素 把它丟進變數 sakfll 變成新的一個盒子
-            let start = null;
+        const  sakfall = document.querySelector('.sakubox');   // 這行是抓取sakubox地個元素 把它丟進變數 sakfll 變成新的一個盒子
+        let start = null;                                    //清空start
 
-            function  startsakura(){
+        function  startsakura(){
+
             start = setInterval(() => {                             //這行是整個執行的邏輯核心 簡單講就是重複執行花瓣掉落的函數 每300毫秒=0.3秒重複執行
             const  saktime = document.createElement('div');        // 直接創造新的div 裝進變數saktime 這行應該是要讓櫻花無限產生的關鍵
             saktime.classList.add('sakucon')                      //變數div上一行定義了 = saktime 讓saktime這個變數增加.class 讓他能套用CSS事先建好的櫻花模板
