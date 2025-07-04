@@ -260,15 +260,13 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-   
-
 }
+
 .trip_text h5 {
     font-size: 1.2rem;
     margin-bottom: 24px;
     color: #B25A74;
     font-weight: 500;
-
 }
 .trip_text p{
     color: #54494B;
@@ -298,14 +296,12 @@
     left: 0;   
     display: flex;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center;}
 
 .map_content{
     width: 600px;
     height: 450px;
     position: relative;
-
 }
 
 .close{
@@ -319,8 +315,7 @@
     right:0;
     cursor: pointer;
     text-align: center;
-    line-height: 24px;
-}
+    line-height: 24px;}
 /*------------------------hover------------------------*/
 
 .travel_img:hover{

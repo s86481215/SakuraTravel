@@ -13,17 +13,17 @@
             saktime.style.width = `${size}px`;            //變數寬 藉由上面的隨機產生給他
             saktime.style.height = `${size}px`;          //變數高也是同上   等於正式讓櫻花隨機大小
 
-            const duration = Math.random() *3+4;           //讓花瓣維持秒數隨機 4~7秒
+            const duration = Math.random() *3+4;        //讓花瓣維持秒數隨機 4~7秒
 
             saktime.style.animationDuration = `${duration}s`;  //4~7秒的隨機時間賦予每片櫻花
 
             saktime.style.animationDelay = `${Math.random()*2}s`  // 讓每個櫻花飄落的時間點都不同產生隨機
 
-            sakfall.append(saktime); //一片櫻花完成 丟到盒子裡面 這個盒子就第一行設定的變數 sakfall
+            sakfall.append(saktime);    //一片櫻花完成 丟到盒子裡面 這個盒子就第一行設定的變數 sakfall
 
-            setTimeout( ()=>{        //一段函數 可以讓某件事延遲發生
-                saktime.remove();  // 刪除飄完的櫻花
-            }, duration *1000 +2000  //毫秒轉成秒 並且+2秒 為了保證   動畫飄完沒問題
+            setTimeout( ()=>{           //一段函數 可以讓某件事延遲發生
+                saktime.remove();          // 刪除飄完的櫻花
+            }, duration *1000 +2000     //毫秒轉成秒 並且+2秒 為了保證   動畫飄完沒問題
 
         );
         },300);  //0.3秒執行一次

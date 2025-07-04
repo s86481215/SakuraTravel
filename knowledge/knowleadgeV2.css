@@ -1,0 +1,305 @@
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_content{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 160px;
+
+}
+
+.main_side{
+   
+    margin-top: 40px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFEEF4;
+}
+
+
+.main_title{
+    margin-top:20px;
+    
+    
+}
+
+.main_side{
+    padding: 10px;
+ 
+}
+
+.main_side h1{
+ margin-bottom: 20px;
+ color: #B25A74;
+ font-weight: bold;
+ text-align: center;
+
+        
+}
+
+.main_side input{
+    line-height: 1.6;
+    border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
+    width: 260px;
+    border-radius: 5px  ;
+}
+
+/*------------------會員---------------*/
+.member_box{
+    margin-top: 40px;
+    width: 260px;
+
+}
+   
+
+.member_box h2 {
+    margin-bottom: 10px;
+    
+}
+.member_p{
+       
+        width: 110px;
+        border-radius: 10px;
+        font-size: 12px;
+        text-align: center;
+        background-color: #F76790;
+        color: white ;
+        padding: 4px;
+        margin-bottom: 5px;
+}
+
+.member_content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    background-color: white;
+    }
+
+.member_p_p {
+     font-size: 12px;
+     color: #B25A74;
+     margin-bottom: 5px;
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+     
+     
+}
+
+.member_content img{
+    margin-top: 10px;
+}
+
+
+
+/*--------------aside nav---------------------*/
+.main_side{
+    height: auto;
+}
+.aside_nav{
+
+    width: 260px;
+    margin-top: 35px;
+}
+
+.aside_nav h2{
+    margin-bottom: 5px;
+}
+
+.aside_nav ul{}
+
+.aside_nav li{
+    border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
+    text-align: center;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    
+    line-height: 1.6;
+    background-color: white;
+    color: #B25A74;
+}
+.aside_nav li:hover{
+    color: #FFB2C1;
+    cursor: pointer;
+}
+/*----------------tag--------------*/
+
+.aside_tag{
+    width: 260px;
+    margin-bottom: 40px;}
+.tag_p{
+    margin-top: 5px;
+    display: flex;
+
+    gap: 16px;
+
+}
+.tag_p p{
+    border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: white;
+    color: #B25A74;
+}
+
+    
+
+/*---------------asidefooter-------------*/
+.aside_foorer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.aside_foorer input{
+    border: color-mix(in srgb, #E6F4FF 50%, #FCEFF5 50%) 1px solid;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/*-------------------main-----------------*/
+
+.main_carbox.active{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: stretch;
+    gap: 60px ;
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+   
+    
+    
+}
+.main_carbox{
+ display: none; 
+}
+
+
+.card_content{
+    background: linear-gradient(to bottom right, #ffeaf4, #ffffff);
+    border: 1px solid #ffd6e9;
+    box-shadow: 0px 5px 5px 0px gray;  
+    max-width: 450px;
+    max-height: auto;
+    width: 100%;
+    position: relative;
+    overflow:hidden
+
+}
+
+.card_img{
+    aspect-ratio: 4/3;
+    text-align: center;
+    margin-top: 20px;
+    
+
+
+}
+.main_carbox img{
+    aspect-ratio: 4/3;  
+     max-width: 400px;
+   
+}
+
+.card_title{
+     padding: 0 20px;
+     margin-bottom: 10px;
+     font-size: 18px;
+     color: #E71755;
+     font-weight: bold;
+}
+ 
+.card_p{
+    padding: 0 20px;
+    line-height: 1.6;
+    
+}
+
+.carbox_tag{
+    margin-top: 12px;
+     padding: 0 20px;
+     display: flex;
+     gap: 5px;
+}
+
+.carbox_tag p{
+     color: #B25A74;
+}
+
+.card_content form{
+    padding: 10px;
+   
+}
+
+.message_board{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    
+    
+}
+
+.message_board textarea{
+    resize: vertical; 
+    border-radius: 10px;
+    
+
+    
+}
+
+form button{
+    background-color: color-mix(in srgb, #FFB2C1 50%, #FF6F91 30%);
+    color:#eb1354e6;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    font-size: 10px;
+}
+
+.message_member li{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.message_member li span{
+    font-weight: bold;
+}
+
+.message_member {
+padding: 10px;
+font-size: 12px;
+}
+.message_member li a{
+    margin-top: 5px;
+    text-decoration: none;
+    }
+.message_member li:nth-child(3){
+     border-bottom:none;
+
+}
+
+
+

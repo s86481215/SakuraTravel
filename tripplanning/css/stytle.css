@@ -17,11 +17,12 @@ main{
 
 }
 .main_title{
-    font-size: 2.4rem;
+    font-size: 1.3rem;
     color:#E86487;
     text-align: center;
     font-weight: bold;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -38,12 +39,14 @@ main{
 }
 
 .main_inputbox{
-    
+    padding: 20px;
+    background-color: #FEEDED;
     display: flex;
     flex-direction: column;
-    gap:100px;
+    gap:50px;
     margin-bottom: 40px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+    border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
 }
 
 .main_inputbox h2{
@@ -58,7 +61,7 @@ main{
 .person_input {
     width: 350px;
     height: 20px;
-    border-radius: 60px;
+    border-radius: 10px;
     border: 1px solid #ccc;
     padding: 10px;
     font-size: 1rem;
@@ -71,18 +74,31 @@ input[type='date']::-webkit-calendar-picker-indicator{
     position: relative;  /* 開啟"可以自己調整位置"模式 */
     right: -7px;         /* 向右推 10px */
 }
+
 .place_input{
     width: 370px;
     height: 40px;
-    border-radius: 60px;
+    border-radius: 10px;
     border: 1px solid #ccc;
     font-size: 1rem;
     border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
     line-height: 20px;
     padding: 10px;
-
-
+    color: rgba(19, 1, 1, 0.919);
 }
+
+
+.ticket .ticket_label{
+    height: 40px;
+    background-color: white;
+    border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 10px;
+}
+
 
 
 .day_input::placeholder{
@@ -90,17 +106,23 @@ input[type='date']::-webkit-calendar-picker-indicator{
 }
 
 
+.main_button{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    }
+
 .main_button button{
-    margin: 0 auto;
     border-radius: 15px;
     color: #ea215d;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 1rem;
     background-color:color-mix(in srgb, #FFB2C1 50%, #FF6F91 50%);
     cursor: pointer;
     border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
-    margin-bottom: 160px;
+   
+    
 }
 
 main h3{

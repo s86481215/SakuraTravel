@@ -1,0 +1,232 @@
+
+
+.main_box{
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 160px;
+    flex-direction: column;
+    align-items: center;
+   
+   
+   
+}
+
+.main_flex{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+
+}
+
+
+
+
+.main_content{
+    border:#D9D9D9 1px solid;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 10px;
+    background-color: #FEEDED;
+    
+   
+
+
+    }
+
+.main_title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #F72673;
+     font-weight: bold;
+    margin-top: 20px;
+
+    }
+
+
+   
+form{
+    width: 100%;
+}
+
+.input p {
+    font-size: 12px;
+    opacity: .5;
+    margin-bottom: 4px;
+}
+.input input{
+   width: 100%;
+   padding: 0px;
+   height: 30px;
+   
+   
+}
+
+.input input::placeholder{
+    font-size: 12px;
+    padding: 5px;
+   
+}
+
+.main_text{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: auto;
+    
+}
+
+.main_text textarea{
+    min-height: 400px;
+    box-sizing: border-box;
+    resize: vertical; /*只能上下拉伸*/
+}
+
+
+
+.main_text input,textarea{
+    border-radius: 5px;
+    border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
+     
+    
+}
+
+.btn{
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.btn button{
+    background-color: color-mix(in srgb, #FFB2C1 50%, #FF6F91 50%);
+    color:#df1250;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: #A7D3E0 1px solid;
+    font-size: 15px;
+    
+}
+
+.btn :hover{
+    color: #e70970;
+    box-shadow: 25px;
+}
+
+#pointer{
+    cursor: pointer;
+}
+.btn :active{
+    transform: translateY(4px);
+}
+
+/*------------------FAQ--------------------*/
+
+.main_faq{
+    border: 1px solid #D9D9D9;
+    max-width: 500px;
+    width: 100%;
+    background-color: #FEEDED;
+    margin-top: 20px;
+    padding: 10px;
+    
+  
+}
+
+.faqtitle{
+    font-size: 24px;
+    color: #F72673;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
+.faqup{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+details{}
+
+details summary{
+    font-size: 16px;
+    color: #f2045b;
+    background-color: color-mix(in srgb, #FFB2C1 30%, #FF6F91 30%);
+    font-weight: bold;
+}
+
+details summary::marker{
+    color: black;
+}
+
+details p {
+    margin-top: 20px;
+    font-size: 14px;
+    background-color: color-mix(in srgb, #FFB2C1 30%, #FF6F91 30%);
+     
+
+}
+
+.faq_center{
+    
+    padding:40px 12px;
+    margin-bottom: 40px;
+     background-color: color-mix(in srgb, #FFB2C1 30%, #FF6F91 30%);
+    
+}
+
+.faq_center h2{
+    color: #f2045b;
+    font-weight: bold;
+    margin-bottom: 16px;
+    
+}
+.faq_center p{
+    font-size: 14px;
+}
+
+
+.faq_footer{
+    background-color: color-mix(in srgb, #FFB2C1 30%, #FF6F91 30%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 12px;
+
+
+}
+
+.faq_footer h2{
+    color: #f2045b;
+    font-weight: bold;
+}
+
+.faq_footer p{ font-size: 14px;
+
+}
+
+.faq_map{
+    aspect-ratio: 6/4;
+    width: 100%;
+}
+
+iframe{
+    aspect-ratio: 6/4;
+    width: 100%;
+    height: auto;
+
+    
+}

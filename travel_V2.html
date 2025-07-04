@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/skafall.css">
+    <link rel="stylesheet" href="./travel/css/travel_V2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <title>旅遊地點</title>
+</head>
+<body>
+    <!-----------------------------以下屬於header_nav------------------------------>  
+    <header class="header">
+
+        <div class="header_content">
+            <div class="logo">
+                <a href="../../home/html/sakure.html"><img src="../../picture/LOGO.svg" alt=""></a>
+            </div>
+
+            <nav class="main_nav">
+                <ul>
+                    <li><a href="../../information/html/information.html">櫻花資訊</a></li>
+                    <li><a href="../../travel/html/travel.html">旅遊地點</a></li>
+                    <li><a href="../../tripplanning/html/trip.html">行程規劃</a></li>
+                    <li><a href="../../food/html/food.html">櫻花美食</a></li>
+                    <li><a href="../../knowledge/html/knowledge.html">趣味知識</a></li>
+                    <li><a href="../../e-mail/html/e-mail.html">櫻-mail</a></li>
+                </ul>
+
+                <div class="nav_icon">
+                    <a  class= 'icon_1' href="../../Login/html/Login.html"> <i class="fa-regular fa-user"></i> </a>
+                    <a class= 'icon_2'  href="../../shoppingcart/html/shop.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+                <button class="main_theme-switch">
+                    <img src="../../picture/sun.svg"  class = "sun active" alt="櫻花開關on">
+                    <img src="../../picture/night.svg" class = "night" alt="櫻花開關off">
+                </button>
+            </nav>
+
+        </div>
+    </header>
+            
+    <main>
+
+        <!----------這是櫻花的空盒子------------>
+
+        <div class="sakubox"></div> 
+                
+        <div class="main_travel_banner"></div>
+            
+        <!-----------------mainpar1---------------->
+        <div class="main_box">
+
+            <div class="main_content">
+                <div class="mainpar1_nav" id="btns">
+                    <!-- <button>關東</button>
+                    <button>東北</button>
+                    <button>關西</button>
+                    <button>中部</button>
+                    <button>北海道</button> -->
+                </div>
+            </div>
+                <!------排除按鈕以外的全部內容做渲染---->
+         
+            <div class="max-box"></div>            
+
+        </div>
+                
+    </main>
+
+    <!------------------------------footer---------------------------------------->
+    <footer>
+
+        <div class="footer_content">
+
+            <div class="footer_border">
+                <div class="footer_logo">
+                    <img src="../../picture/LOGO.svg" alt="櫻映旅途logo">
+                </div>
+
+                <div class="footer_text">
+                    <h2>電話: 02-2712-0589</h2>
+                    <h3>地址: 104台北市中山區南京東路三段219號</h3>
+                    <h4>信箱: sakura@gmail.com</h4>
+                </div>
+
+                <div class="footer_icon">
+                    <a href=""><i class="fa-brands fa-line" style="color: #63E6BE;"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter" style="color: #74C0FC;"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook" style="color: #173fde;"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer_note">
+            <p>本網站為緯育TibaMe前端工程師班第XX期學員專題作品,本平台僅供學習、展示之用。參考資源: www.wwww.wwwww.com</p>
+        </div>
+
+    </footer>
+
+<!---------------------js區--------------------------------->
+    <script src="../../js/sakure.js"></script>
+    <script src="../data-detail.js"></script>
+    <script>    
+        $(function(){
+            $('body').on('click','[data-detail]',function(){ //直接綁body最大父層事件監聽click JS會去抓有data-detail元素的標籤(在這邊都是設在按鈕上所以不會有其他標籤點道出BUG)然後執行下面程式
+                const idex = $(this).data('detail') //綁定body的原因是因為切換畫面時dom沒載入會導致新切頁面的按鈕沒有掛上事件監聽 所以才反過來利用屬性去抓標籤!
+                $(this).closest('.trvel_card').find('.Details_box').slideUp(1000,function(){    //點選查看更多(自己) closest尋找就近父層trvel_card 然後在往下找自己區塊的'Details_box'=>我卡片要顯示的區域
+                    $(this).html(details_data[idex]).slideDown(1000)    //點選查看更多找到對應的details_data值 (上面按鈕都有設對應details_data值) 搭配陣列指引顯示正確元素畫面
+                })
+               
+            })
+        })
+    </script>
+
+    <script>
+        $(function(){
+            $('body').on('click','.transportation_btn[map-data]',function(){ 
+                const idx = $(this).attr('map-data')
+                $(`.map_card[map-data="${idx}"]`).slideToggle(1000,function(){
+                  console.log('被點了');
+                    $(this).html(mapdata[idx])
+                })
+                
+            })
+        })
+
+        const regions = ["關東", "東北", "關西", "中部", "北海道"];
+    // 指派一個 render function
+    function renderAssignedElement(index) {
+     //   alert(`你點擊的是：${regions[index]}（index: ${index}）`);
+        // 你可以根據 index 做更多的渲染或 DOM 操作
+        fetchPageFunction(index)
+    }
+
+  // 產生按鈕
+  const btnsDiv = document.getElementById('btns');
+  for (let i = 0; i < regions.length; i++) {
+    const btn = document.createElement('button');
+    btn.textContent = regions[i];
+    btn.onclick = function () {
+      renderAssignedElement(i);
+    };
+    btnsDiv.appendChild(btn);
+  }
+
+  const fetchPageFunction = (index) =>{
+    console.log(index)
+      fetch(`max_box_${index}.html`)
+        .then(res => {
+          if (!res.ok) throw new Error("檔案載入失敗");
+          return res.text();
+        })
+        .then(html => {
+            console.log('fetch HTML內容：', html);
+          $('.max-box')[0].innerHTML = html;
+        })
+        .catch(err => {
+          document.getElementById('max-box').innerHTML = "<p>內容載入失敗，請稍後再試。</p>";
+        });
+  }
+ 
+  console.log("fetchPageFunction loaded!");
+
+  fetchPageFunction(0)
+
+
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/memory.css">
+  <title>趣味知識</title>
+</head>
+<body>
+    <div class="card_box">
+      <div class='card_title'>
+        <h1>賞櫻學堂-神經衰落</h1>
+      </div>
+      
+
+      <section class="card_borde">
+        <!-----------第一組------------>
+        <div class="card" data-pair="0">
+          <div class="card_innter">
+            <div class="card_Front answer">
+              <p>A:是的，鹽漬櫻花常用於製作櫻餅、櫻茶等傳統甜點。</p>
+            </div>
+            <div class="card_back"><img src="/picture/LOGO.svg" alt=""></div>
+          </div>
+        </div>
+        <!-----------第二組------------>
+         <div class="card" data-pair="1">
+          <div class="card_innter" >
+            <div class="card_Front question">
+              <h2>Q:櫻花前線、標本木是什麼？</h2>
+            </div>
+            <div class="card_back"><img src="/picture/LOGO.svg" alt=""></div>
+          </div>
+        </div>
+        <!-----------第三組------------>
+         <div class="card" data-pair="2">
+          <div class="card_innter" >
+            <div class="card_Front answer">
+              <p>A:染井吉野櫻花期集中、生長快,約佔日本櫻花總量的80%。</p>
+            </div>
+            <div class="card_back"><img src="/picture/LOGO.svg" alt=""></div>
+          </div>
+        </div>
+        <!-----------第四組------------>
+         <div class="card" data-pair="3">
+          <div class="card_innter">
+            <div class="card_Front question">
+              <h2>Q:日本三大巨櫻</h2>
+            </div>
+            <div class="card_back"><img src="/picture/LOGO.svg" alt=""></div>
+          </div>
+        </div>
+        <!-----------第五組------------>
+        <div class="card" data-pair="4">
+          <div class="card_innter ">
+            <div class="card_Front question">
+              <h2>Q:櫻桃葉有毒？！</h2>
+            </div>
+            <div class="card_back"><img src="/picture/LOGO.svg" alt=""></div>
+          </div>
+        </div>
+        <!-----------第六組------------>
+        <div class="card" data-pair="5">  
+          <div class="card_innter">
+            <div class="card_Front answer">
+              <p>A:每年3月27日日本舉辦櫻花節(Sakura Festival)，慶祝花開與文化活動。</p>
+            </div>
+            <div class="card_back"><img src="/picture/LOGO.svg" alt=""></div>
+          </div>
+        </div>
+        <!-----------第七組------------>
+        <div class="card" data-pair="1"> 
+          <div class="card_innter">
+            <div class="card_Front answer">
+              <p>A:櫻花前線是日本氣象廳依據氣溫和歷史觀測資料，預測櫻花開花時機的「花期推移線」。</p>
+            </div>
+            <div class="card_back"><img src="/picture/LOGO.svg" alt=""></div>
+          </div>
+        </div>
+        <!-----------第八組------------>
+        <div class="card" data-pair="5"> 
+          <div class="card_innter">
+            <div class="card_Front question">
+              <h2>Q:3月27日是櫻花節!?</h2>
+            </div>
+            <div class="card_back"><img src="/picture/LOGO.svg" alt=""></div>
+          </div>
+        </div>
+        <!-----------第九組------------>
+         <div class="card" data-pair="2"> 
+          <div class="card_innter">
+            <div class="card_Front question" >
+              <h2>Q:日本80%的櫻花是染井吉野櫻</h2>
+            </div>
+            <div class="card_back"><img src="/picture/LOGO.svg" alt=""></div>
+          </div>
+        </div>
+        <!-----------第十組------------>
+        <div class="card" data-pair="4"> 
+          <div class="card_innter" >
+            <div class="card_Front answer">
+              <p>A:櫻花本身無毒，但其葉或果實含少量苦味素，誤食可能不適。</p>
+            </div>
+            <div class="card_back"><img src="/picture/LOGO.svg" alt=""></div>
+          </div>
+        </div>
+        <!-----------第十一組------------>
+        <div class="card" data-pair="0"> 
+          <div class="card_innter" >
+            <div class="card_Front question">
+              <h2>Q:日本人真的會吃櫻花？！</h2>
+            </div>
+            <div class="card_back"><img src="/picture/LOGO.svg" alt=""></div>
+          </div>
+        </div>
+
+        <!-----------第十二組------------>
+        <div class="card" data-pair="3"> 
+          <div class="card_innter">
+            <div class="card_Front answer">
+              <p>A:指弘前公園、吉野山、千鳥淵這三處樹齡千年以上的巨樹級櫻花。</p>
+            </div>
+            <div class="card_back"><img src="/picture/LOGO.svg" alt=""></div>
+          </div>
+        </div>
+
+        
+        
+
+       
+      </section>
+
+    </div>
+
+
+
+    <script>
+      const pair = [    //把6組Q/A分別丟到陣列pair 這整個陣列pair就是個大型物件! 
+        {question : "Q:日本人真的會吃櫻花？！",answer: "A:是的，鹽漬櫻花常用於製作櫻餅、櫻茶等傳統甜點。"},
+        {question : "Q:櫻花前線、標本木是什麼？",answer: "A:櫻花前線是日本氣象廳依據氣溫和歷史觀測資料，預測櫻花開花時機的「花期推移線」。"},
+        {question : "Q:日本80%的櫻花是染井吉野櫻",answer: "A:染井吉野櫻花期集中、生長快,約佔日本櫻花總量的80%。"},
+        {question : "Q:日本三大巨櫻",answer: "A:指弘前公園、吉野山、千鳥淵這三處樹齡千年以上的巨樹級櫻花。"},
+        {question : "Q:櫻桃葉有毒？！",answer: "A:櫻花本身無毒，但其葉或果實含少量苦味素，誤食可能不適。"},
+        {question : "Q:3月27日是櫻花節!?",answer: "A:每年3月27日日本舉辦櫻花節(Sakura Festival)，慶祝花開與文化活動。"},
+      ];
+      //以下是洗牌涵式 先建立一個能洗牌的函數 之後把上面的物件當參數帶入達到洗牌功能
+
+      function shuffle (arr){
+      for(let i = 0; i < arr.length-1; i++){
+        let j = i + Math.floor( Math.random()*(arr.length-i)); //從某區間取亂數  = i + Math.floor(Math.random()*(max-min)+1)  在這裡面max-min是控制區間的關鍵 負責減去已交換的部分 max=arr.length-1 min=i
+        [arr[i],arr[j]] = [arr[j],arr[i]];
+      }
+      }
+    
+
+      //翻牌互動配對
+      /*document.addEventListener('.DOMContentLoaded',() => {
+
+        const board = document.querySelector('.card_borde'); //抓遊戲區元素
+        let opedn = [];  //暫存翻開的卡片用 
+
+        board.addEventListener('click',e =>{
+          const card = e.target.closeS('.card');
+        })
+
+      }*/
+
+      document.addEventListener('DOMContentLoaded', () => {
+  const board = document.querySelector('.card_borde');
+  let opened = [];
+
+  board.addEventListener('click', e => {
+    const card = e.target.closest('.card');
+    if (!card
+        || card.classList.contains('is-flipped')
+        || opened.length === 2) return;
+
+    card.classList.add('is-flipped');
+    opened.push(card);
+
+    if (opened.length === 2) {
+      const [first, second] = opened;
+      if (first.dataset.pair === second.dataset.pair) {
+        first.classList.add('matched');
+        second.classList.add('matched');
+        opened = [];
+        // ↓ 選擇性：檢查遊戲結束
+        // if (board.querySelectorAll('.card.matched').length === pairs.length * 2) { … }
+      } else {
+        first.classList.add('wrong');
+        second.classList.add('wrong');
+        setTimeout(() => {
+          first.classList.remove('is-flipped', 'wrong');
+          second.classList.remove('is-flipped', 'wrong');
+          opened = [];
+        }, 800);
+      }
+    }
+  });
+});
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    )
+
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    )
+    
+
+    </script> 
+    
+</body>
+</html>
