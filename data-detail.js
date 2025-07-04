@@ -9,17 +9,17 @@
 
         const data_01 =  `     
                                 <div class="Details">
-                                    <h1><img src="../../picture/櫻花.svg" alt="">花期與花種</h1>
+                                    <h1><img src="picture/櫻花.svg" alt="">花期與花種</h1>
                                     <p>此區以吉野櫻為主，預估花期為3月中下旬</p>    
                                 </div>
                                 
                                 <div class="Details">
-                                    <h1><img src="../../picture/櫻花.svg" alt="">賞花地點概況</h1>
+                                    <h1><img src="picture/櫻花.svg" alt="">賞花地點概況</h1>
                                     <p>後山有成片的櫻花林，整片花海如雲霞般繽紛，襯托出天元宮的氣宇非凡。這裡是攝影愛好者的天堂，無論是拍攝特寫還是全景，都能捕捉到美麗的春日景色。</p>
                                 </div> 
 
                                 <div class="Details"> 
-                                    <h1><img src="../../picture/櫻花.svg" alt="">景點介紹</h1>
+                                    <h1><img src="picture/櫻花.svg" alt="">景點介紹</h1>
                                     <p>上野恩賜公園是東京知名的賞櫻勝地，每年3月下旬至4月上旬，約800棵櫻花樹盛開，形成一片粉色花海，吸引眾多遊客前來。 櫻花祭期間，公園內會舉辦各種活動，並設有攤販，熱鬧非凡。</p>
                                 </div> 
 
@@ -37,17 +37,17 @@
                             </div>`
 
         const data_03=` <div class="Details">
-                                <h1><img src="/picture/櫻花.svg" alt="">花期與花種</h1>
+                                <h1><img src="picture/櫻花.svg" alt="">花期與花種</h1>
                                 <p>此區以染井吉野櫻和河津櫻為主,預估花期為3月中旬至4月上旬,晚開品種則可見至4月中旬。</p>    
                             </div>
                             
                             <div class="Details">
-                                <h1><img src="/picture/櫻花.svg" alt="">賞花地點概況</h1>
+                                <h1><img src="picture/櫻花.svg" alt="">賞花地點概況</h1>
                                 <p>隅田川兩岸約2公里櫻林步道，串聯駒形橋至言問橋的粉櫻長廊、吾妻橋下映照晴空塔的夜櫻、隅田公園西岸的野餐河津櫻，以及東武橋上俯瞰遊船花海，日夜皆宜，浪漫與壯闊兼具。</p>
                             </div> 
 
                             <div class="Details"> 
-                                <h1><img src="/picture/櫻花.svg" alt="">景點介紹</h1>
+                                <h1><img src="picture/櫻花.svg" alt="">景點介紹</h1>
                                 <p>隅田公園串聯兩岸櫻花步道，是東京代表性的賞櫻勝地。每年春季舉辦「春櫻祭」，夜間點燈與隅田川遊船同時開放，還有多處屋台美食與手作市集，熱鬧非凡。清晨晨霧中漫步，或黃昏燈火初上時散策，皆能感受河畔櫻景的浪漫與悠閒。</p>
                             </div> 
 
@@ -67,17 +67,17 @@
             `
             
          const data_05 =` <div class="Details">
-                                    <h1><img src="/picture/櫻花.svg" alt="">花期與花種</h1>
+                                    <h1><img src="picture/櫻花.svg" alt="">花期與花種</h1>
                                     <p>此處以早咲河津櫻為主，粉紅色花瓣飽滿、花期長達約三週，開花最盛時猶如粉色雲海。</p>    
                                 </div>
                                 
                                 <div class="Details">
-                                    <h1><img src="/picture/櫻花.svg" alt="">賞花地點概況</h1>
+                                    <h1><img src="picture/櫻花.svg" alt="">賞花地點概況</h1>
                                     <p>沿河岸步道兩側種植約300株河津櫻,花廊全長約800M。中段設有觀景平台與木棧道,並配有休憩涼亭與長椅，方便漫步與拍照。</p>
                                 </div> 
 
                                 <div class="Details"> 
-                                    <h1><img src="/picture/櫻花.svg" alt="">景點介紹</h1>
+                                    <h1><img src="picture/櫻花.svg" alt="">景點介紹</h1>
                                     <p>河津櫻並木為東京罕見的早櫻勝地，春初吸引大批攝影與野餐愛好者。白天可捕捉花海全景，夜間燈串映照河面，營造浪漫夢幻氛圍；節慶期間更有屋台小吃與手作市集，熱鬧非凡。</p>
                                 </div> 
 
@@ -323,11 +323,11 @@
                         </div>
 
                        <div class="transportation">
-                            <h4><img src="/picture/櫻花.svg" alt=""></i>交通方式</h4>
+                            <h4><img src="picture/櫻花.svg" alt=""></i>交通方式</h4>
 
                             <p><span><i class="fa-solid fa-train"></i></span>東京站 → JR山手線(4分鐘) → <span><i class="fa-solid fa-train"></i></span>秋葉原站 →→ <span><i class="fa-solid fa-train"></i></span> 轉乘東京Metro日比谷線(4分鐘)<br> → <span><i class="fa-solid fa-train"></i></span> 淺草站 → 步行約3分鐘 → <span><i class="fa-regular fa-flag"></i></span>隅田公園</p>
 
-                            <h5><img src="/picture/櫻花.svg" alt="">周邊景點</h5>
+                            <h5><img src="picture/櫻花.svg" alt="">周邊景點</h5>
                             <p><span>隅田川遊船 : </span>可搭乘遊船，沿途欣賞櫻花河岸美景，<br>夜間還有點燈，河面倒映櫻花與晴空塔，非常浪漫。</p>
                             <p><span>東京晴空塔 : </span>東京著名地標，可以從高空俯瞰隅田川沿岸的櫻花長廊，<br>是春季賞櫻的熱門地點。</p>
                             <p><span>駒形橋 & 言問橋 : </span>這兩座橋是橫跨隅田川兩岸的知名賞櫻熱點，<br>推薦在黃昏和夜晚賞夜櫻、拍照，氛圍特別美。</p>
