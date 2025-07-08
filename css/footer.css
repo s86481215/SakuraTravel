@@ -52,3 +52,21 @@ footer{
 footer p {
     margin: auto;
     width: 900px;}
+/*------------------------------RWD:430--------------------------*/
+@media screen and (max-width:431px) {
+footer p{
+        display: none;
+    }
+.footer_content{
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+/*------------------------------RWD:1110--------------------------*/
+}
+@media screen and (max-width:1110px) {
+    footer p{
+        display: none;
+    }
+}

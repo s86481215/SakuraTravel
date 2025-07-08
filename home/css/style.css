@@ -49,10 +49,10 @@ main{
     font-size: 1rem;
 }
 
-.main_pc1_img:hover{
+/*.main_pc1_img:hover{
     transform: scale(1.2);
     transition-delay: .2s;
-}
+}*/
 /*--------------------------------第二塊圖----------------------------------->*/
 
 .main_pc2{
@@ -189,4 +189,71 @@ main{
     cursor: pointer;
     transform: translateY(-2px);
     
+}
+
+/*------------------------------RWD:430--------------------------*/
+@media screen and (max-width:431px) 
+{
+
+
+.main_pc1_img:hover{
+        transform: none
+}
+
+}
+/*------------------------------RWD:1110--------------------------*/
+@media screen and (max-width:1110px)
+    {
+
+    .main_pc1{
+        max-width: 800px;
+        padding: 20px;
+        border: 10px rgba(227, 104, 32, 0.175) solid;
+        box-sizing: border-box;
+        background-color: #e8648759;
+     
+    }
+    .main_pc2{
+        max-width: 800px;
+        padding: 20px;
+        border: 10px rgba(227, 104, 32, 0.175) solid;
+         box-sizing: border-box;
+         background-color: #e8648759;
+    }
+
+    .main_pc3{
+        max-width: 800px;
+        padding: 20px;
+        border: 10px rgba(227, 104, 32, 0.175) solid;
+         box-sizing: border-box;
+         background-color: #e8648759;
+    }
+
+    .main_pc4{
+        max-width: 800px;
+        padding: 20px;
+        border: 10px rgba(227, 104, 32, 0.175) solid;
+         box-sizing: border-box;
+         background-color: #e8648759;
+    }
+
+    .main_pc2_img img{
+        
+        width: 100%;
+    }
+    
+    
+}
+
+/*---------------------------Rwd:860----------------------*/
+@media screen and (max-width:860px) {
+    .main_pc4{
+       width: 100%;
+        
+    }
+    .main_pc1{
+        gap:40px;
+        
+    }
+        
 }

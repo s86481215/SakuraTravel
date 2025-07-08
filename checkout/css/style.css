@@ -90,15 +90,22 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
+    
+    
     }
 
 .shop_content{
-    width: 600px; 
+    width: 100%;
+    max-width: 600px;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: #FEEDED;
     padding-bottom: 16px;
+    border: 5px solid pink;
+    border-bottom: none;
+    
+
 }
     
 
@@ -119,6 +126,7 @@ main{
     border-bottom: 2px solid #FFB2C1;
     align-items: center;
     margin-bottom: 20px;
+    
     
 }
 
@@ -142,14 +150,17 @@ main{
 /*-----------------shop_pay------------------*/
 
 .shop_pay{
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
     background-color: #FEEDED;
-    
+    border: 5px solid pink;
+     border-top: none;
+    border-bottom: none;
 }
 
 .pay_form{
@@ -192,6 +203,8 @@ main{
     justify-content: center;
     gap: 20px;
     background-color: #FEEDED;
+    border: 5px solid pink;
+    border-top: none;
     
 }
 
@@ -285,4 +298,103 @@ main{
     transition: 0.3s;
     cursor: pointer;
     transform: translateY(-4px);
+}
+
+/*------------------------------RWD:430--------------------------*/
+@media screen and (max-width:431px) 
+{
+
+main{
+    /*overflow-x: hidden;*/
+}
+.shop_bar{
+    box-sizing: border-box;
+    width: 100%;
+    gap: 150px;
+    align-items: flex-start;
+    margin: 50;
+    
+}
+.shop_bar p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.bar_circle_se::after{
+    width: 158px;
+    left: 100%;
+}
+
+.bar_circle_se::before{
+    width: 180px;
+    right: 100%;
+}
+
+.shop_content{
+    padding: 10px;
+    box-sizing: border-box; 
+    width: 100%;
+    border: 10px solid pink;
+}
+.shopbox{
+    width: 100%;  
+    
+}
+
+.shop_pay{
+     width: 100%;
+     padding: 10px;
+     box-sizing: border-box; 
+     border: 10px solid pink;
+     border-top: none;
+}
+
+.shop_info{
+    padding: 10px;
+    box-sizing: border-box; 
+    border: 10px solid pink;
+    border-top: none;
+    
+}
+
+}
+
+/*------------------------------RWD:601--------------------------*/
+@media screen and (max-width:601px) 
+{
+    .shop_content{
+        box-sizing: border-box;
+    }
+    .shop_pay{
+         box-sizing: border-box;
+    }
+    .shop_info{
+         box-sizing: border-box;
+    }
+    .shopbox{
+        width: 100%;
+    }
+
+    .shop_bar{
+    box-sizing: border-box;
+    width: 100%;
+    gap: 100px;
+    align-items: flex-start;
+   }
+    
+
+.shop_bar p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.bar_circle_se::after{
+    width: 125px;
+    left: 80%;
+}
+
+.bar_circle_se::before{
+    width: 130px;
+    right: 80%;
+}
 }

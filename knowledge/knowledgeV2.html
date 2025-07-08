@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/skafall.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <title>趣味知識</title>
 </head>
 <body>
@@ -25,30 +24,36 @@
             <nav class="main_nav">
 
                 <ul>
-                   <li><a href="../information/html/information.html">櫻花資訊</a></li>
-                    <li><a href="../travel_V2.html">旅遊地點</a></li>
-                    <li><a href="../tripplanning/html/trip.html">行程規劃</a></li>
-                    <li><a href="../food/html/food.html">櫻花美食</a></li>
-                    <li><a href="../knowledge/knowledgeV2.html">趣味知識</a></li>
-                    <li><a href="../e-mail/html/e-mail_V2.html">櫻-mail</a></li>
+                    <li><a href="../../information/html/information.html">櫻花資訊</a></li>
+                    <li><a href="../../travel_V2.html">旅遊地點</a></li>
+                    <li><a href="../../tripplanning/html/trip.html">行程規劃</a></li>
+                    <li><a href="../../food/html/food.html">櫻花美食</a></li>
+                    <li><a href="../../knowledge/knowledgeV2.html">趣味知識</a></li>
+                    <li><a href="../../e-mail/html/e-mail_V2.html">櫻-mail</a></li>
+                    <li><a class= 'icon_1' href="../../Login/html/Login.html"> <i class="fa-regular fa-user"></i>會員登入</a></li>
+                    <li><a class= 'icon_2'  href="../../shoppingcart/html/shop.html"> <i class="fa-solid fa-cart-shopping"></i>購物車</a></li>
                 </ul>
 
                 <div class="nav_icon">
-                    <a  class= 'icon_1' href="../Login/html/Login.html"> <i class="fa-regular fa-user"></i> </a>
-                    <a class= 'icon_2'  href="../shoppingcart/html/shop.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+                    <a  class= 'icon_1' href="../../Login/html/Login.html"> <i class="fa-regular fa-user"></i> </a>
+                    <a class= 'icon_2'  href="../../shoppingcart/html/shop.html"> <i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
 
                 <button class="main_theme-switch">
-                    <img src="../picture/sun.svg"  class = "sun active" alt="櫻花開關on">
-                    <img src="../picture/night.svg" class = "night" alt="櫻花開關off">
+                    <img src="../../picture/sun.svg"  class = "sun active" alt="櫻花開關on">
+                    <img src="../../picture/night.svg" class = "night" alt="櫻花開關off">
                 </button>
-                
+                <div class="hamburger">
+                    <img src="../../picture/icons8-hamburger.svg" alt="">
+                </div>
+
             </nav>
 
         </div>
     </header>
     <!------------------------------main------------------------------------->
     <main>
+        
         <!----------這是櫻花的空盒子------------>
         <div class="sakubox"></div> 
 
@@ -56,65 +61,72 @@
          
         </div>
 
+        <div class="fa-chevron ">
+            <i class="fa-solid fa-circle-right"></i>
+        </div>
+
         <div class="main_content">
             <aside class="main_side">
-                <div class="main_title">
-                    <h1>櫻花之旅知識</h1>
-                    <input type="search" placeholder="搜尋賞櫻知識">
-                </div>
+                <div class="box_box">
+                    <div class="main_title">
+                        <h1>櫻花之旅知識</h1>
+                        <input type="search" placeholder="搜尋賞櫻知識">
+                    </div>
 
-                
-                <div class="member_box">  
-                    <h2>會員專區</h2> 
-                    <div class="member_content">
-                        <img src="../picture/member_icon.png" width="50px" height="50px" alt="">
-                            <p>member_優子</p>
-                        <div class="member_p">
-                            <p>LV5.賞櫻達人</p>
+                    
+                    <div class="member_box">  
+                        <h2>會員專區</h2> 
+                        <div class="member_content">
+                            <img src="../picture/member_icon.png" width="50px" height="50px" alt="">
+                                <p>member_優子</p>
+                            <div class="member_p">
+                                <p>LV5.賞櫻達人</p>
+                            </div>
+                            <div class="member_p_p">
+                                <p>我的留言</p>
+                                <p>我的收藏</p>
+                            </div>
                         </div>
-                        <div class="member_p_p">
-                            <p>我的留言</p>
-                            <p>我的收藏</p>
+                    </div>
+
+                    <div class="aside_nav">
+                        <h2>分頁導航</h2>
+                        <ul>
+                            <li>賞櫻文化與歷史習俗</li>
+                            <li>櫻花品種與知識科普</li>
+                            <li>氣象與預測知識</li>
+                            <li>賞櫻美食和冷知識</li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="aside_tag">
+                        <div>
+                        <h2>熱門標籤</h2>
+                        </div>
+                        <div class='tag_p'>
+                        <p>#花見</p>
+                        <p>#品種</p>
+                        <p>#熱門景點</p>
                         </div>
                     </div>
-                </div>
 
-                <div class="aside_nav">
-                    <h2>分頁導航</h2>
-                    <ul>
-                        <li>賞櫻文化與歷史習俗</li>
-                        <li>櫻花品種與知識科普</li>
-                        <li>氣象與預測知識</li>
-                        <li>賞櫻美食和冷知識</li>
-                    </ul>
-                </div>
+                    <div class="aside_foorer">
+                        <div>
+                        <h2>今日櫻知</h2>
+                        <input type="text">
+                        </div>
 
-                
-                <div class="aside_tag">
-                    <div>
-                    <h2>熱門標籤</h2>
+                        <div>
+                        <h2>賞櫻活動倒數</h2>
+                        <input type="text">
+                        </div>
+
                     </div>
-                    <div class='tag_p'>
-                    <p>#花見</p>
-                    <p>#品種</p>
-                    <p>#熱門景點</p>
-                    </div>
-                </div>
-
-                <div class="aside_foorer">
-                    <div>
-                    <h2>今日櫻知</h2>
-                    <input type="text">
-                    </div>
-
-                    <div>
-                    <h2>賞櫻活動倒數</h2>
-                    <input type="text">
-                    </div>
-
                 </div>
             </aside>
             <!------------------------ringht-------------------------------------->
+           
             <div class="main_carbox active">
                 <div class="card_content">
                     <div class="card_img">
@@ -514,20 +526,30 @@
     </footer>
 
     <!---------------------js區--------------------------------->
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.js"></script>
     <script src="../js/sakure.js"></script>
+    <script src="../../js/hamburger.js"></script>
     <script>
 
         $(function(){
+            
             $('.aside_nav li').click(function(){
                 let idx = $(this).index() //用this表示li元素本身 index是li順序指引
                 $('.main_carbox').removeClass('active')
                 $('.main_carbox').eq(idx).addClass('active') //利用eq eq功用是可以根據指引順序抓去對應元素
             })
 
-
+            $('.fa-chevron').on('click',function(){
+               
+                $('.main_side').toggle('slide',{direction: 'left', appendTo:'body' },1000)
+                $(this).toggleClass('right')
+                
+                
+            })
         });
     </script>
-
+    
     
 </body>
 </html>

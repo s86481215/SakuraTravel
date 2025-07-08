@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>#toggle {
+  display: none; /* 隱藏 checkbox */
+}
+
+.content {
+  display: none; /* 預設隱藏內容 */
+}
+
+#toggle:checked + label + .content {
+  display: block; /* checkbox 勾選時顯示內容 */
+}</style>
+<body>
+    <input type="checkbox" id="toggle">
+<label for="toggle">點擊我</label>
+
+<div class="content">
+  內容
+</div>
+    
+</body>
+</html>

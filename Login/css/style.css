@@ -209,3 +209,31 @@ button:hover{
 
 }
 
+/*-----------------rwd:431-------------------------*/
+
+@media screen and (max-width:431px) 
+{
+
+.accoun_input, .password_input{
+    box-sizing: border-box;
+}
+
+.Third-party_login::before{
+    width: 100px;
+}
+
+.Third-party_login::after{
+    width: 100px;
+}
+
+.main_box{
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
+
+
+
+
+
+}

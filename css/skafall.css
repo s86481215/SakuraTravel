@@ -15,6 +15,7 @@ body{
     z-index: 1000;
     animation: fall linear infinite;  /*固定速率  次數無限飄落  */
     overflow: hidden; /*讓櫻花不要飄出螢幕外*/
+     
 }
 
 @keyframes fall {

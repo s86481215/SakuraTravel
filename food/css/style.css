@@ -246,4 +246,91 @@ main p{
     border-radius: 25%;
     
 }
+/*------------------------------RWD:430--------------------------*/
+@media screen and (max-width:431px) 
+{
+.main_btn{
+    width: 100%;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
 
+.main_pc1{
+    background-color: rgba(232, 137, 34, 0.41);
+    border: 10px rgba(241, 127, 6, 0.347) solid;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.main_pc2{
+     background-color: rgba(232, 137, 34, 0.41);
+    border: 10px rgba(241, 127, 6, 0.347) solid;
+    padding: 50px;
+    box-sizing: border-box;
+
+}
+
+
+
+.main_pc3{
+     background-color: rgba(232, 137, 34, 0.41);
+    border: 10px rgba(241, 127, 6, 0.347) solid;
+    padding: 50px;
+    box-sizing: border-box;
+
+}
+
+}
+/*------------------------------RWD:1100--------------------------*/
+@media screen and (max-width:1100px) 
+{   .main_pcbox{
+    justify-content: center;
+    align-items: center;
+}
+    .main_pc1{
+        width: 80%;
+        gap: 50px;
+    }
+    .main_pc2{
+        width: 80%;
+        gap: 50px;
+    }
+
+    .main_pc3{
+       width: 80%;
+       gap: 50px;
+    }
+    .main_pc4{
+        width: 80%;
+        gap: 50px;
+    }
+}
+
+/*---------------------rwd:770------------------------*/
+@media screen and (max-width:770px) 
+{   
+    .main_btn{
+        margin-top: 100px;        
+        gap:40px;
+    }
+    .main_btn button{
+        
+        height: auto;
+    }
+}
+
+/*---------------------rwd:602------------------------*/
+@media screen and (max-width:602px) 
+{ 
+    .main_pc2{
+        flex-direction: column-reverse;
+    }
+    .main_pc3{
+        flex-direction: column}
+
+    
+}

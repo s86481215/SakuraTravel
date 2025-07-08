@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="icon" href="../../picture/LOGO.svg">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <title>櫻映旅途</title>
 </head>
    
@@ -34,6 +36,8 @@
                     <li><a href="../../food/html/food.html">櫻花美食</a></li>
                     <li><a href="../../knowledge/knowledgeV2.html">趣味知識</a></li>
                     <li><a href="../../e-mail/html/e-mail_V2.html">櫻-mail</a></li>
+                    <li><a class= 'icon_1' href="../../Login/html/Login.html"> <i class="fa-regular fa-user"></i>會員登入</a></li>
+                    <li><a class= 'icon_2'  href="../../shoppingcart/html/shop.html"> <i class="fa-solid fa-cart-shopping"></i>購物車</a></li>
                 </ul>
 
                 <div class="nav_icon">
@@ -45,6 +49,9 @@
                     <img src="../../picture/sun.svg"  class = "sun active" alt="櫻花開關on">
                     <img src="../../picture/night.svg" class = "night" alt="櫻花開關off">
                 </button>
+                <div class="hamburger">
+                    <img src="../../picture/icons8-hamburger.svg" alt="">
+                </div>
 
             </nav>
 
@@ -55,33 +62,32 @@
     <main>
         <!----------這是櫻花的空盒子------------>
         <div class="sakubox"></div>         
-        <div class="main_banner">
-        </div>
+        <div class="main_banner"></div>
 <!--------------------------------第一塊圖----------------------------------->
-        <div class="main_pc1">
+        <div class="main_pc1 ">
 
-            <div class="main_pc1_text">
+            <div class="main_pc1_text gs_reveal fromLeft">
                 <h1>文化歷史</h1>
                 <p>日本的賞櫻文化源遠流長，可追溯至奈良時代，當時賞花的主角是梅花。到了平安時代，櫻花逐漸取代梅花，成為貴族間的重要活動。
                 江戶時代後，賞櫻進一步普及至民間，成為春季重要的戶外盛事。最早的賞花紀錄，是嵯峨天皇在京都御所舉辦的花宴。當時人們吟詩讚美櫻花的纖弱與短暫，
                 視其為生命的象徵——短暫卻絢爛。這種生命觀深植於日本文化之中，認為在最燦爛時刻凋零，勝過平淡老去。平安時代的詩人經常因春櫻盛開，而感嘆人生苦短。</p>
             </div>
 
-            <div class="main_pc1_img">
+            <div class="main_pc1_img gs_reveal fromRight" data-delay-sec="0.3">
                 <img src="../../picture/01.png" alt="鐵路與櫻花">
             </div>
 
         </div>
 <!--------------------------------第二塊圖--------------------------------->
-        <div class="main_pc2">
+        <div class="main_pc2 " >
 
-            <div class="main_pc2_text">
+            <div class="main_pc2_text gs_reveal fromRight" data-delay-sec="0.5">
                 <h1>熱門景點</h1>
                 <p>日本賞櫻景點眾多，其中京都府立植物園、哲學之道、姬路城、代代木公園、河津、沖繩、弘前城公園、井之頭公園等地最受歡迎。
                 這些地點各具特色，有的以古城與櫻花相映成趣，有的以河畔櫻花聞名，也有都市中的絕佳賞櫻去處。本網站將介紹前十大熱門區域，並提供購票系統服務。</p>
             </div>
                                           
-            <div id='splideimg'    class="splide">             <!-------splide為輪播最外層的框 它的功能就是單純的告訴JS他是輪播DIV------>
+            <div id='splideimg'    class="splide gs_reveal  fromRight">             <!-------splide為輪播最外層的框 它的功能就是單純的告訴JS他是輪播DIV------>
                 <div class="splide__track">                          <!--------splide__track輪播區域 應該這麼解釋 所有的輪播徒都在這個限定的區域輪播---->
                     <div class="main_pc2_img splide__list">               <!-----splide__list 輪播清單(容器) 輪播的內容會在這裏面 JS控制這個裡面的內容輪播----->             
                         <img src="../../picture/02.png" class='splide__slide' alt="弘前公園（青森縣）">   <!------- splide__slide 每個輪播的項目 ------->
@@ -94,15 +100,15 @@
         </div>  
 
 <!--------------------------------第三塊圖----------------------------------->
-        <div class="main_pc3">
+        <div class="main_pc3 ">
 
-            <div class="main_pc3_text">
+            <div class="main_pc3_text gs_reveal fromLeft">
                 <h1>櫻花美食</h1>
                 <p>日日本的櫻花季，除了賞花，還有許多以櫻花為主題的特色美食。這些食物不僅外觀精美，更融入了櫻花的香氣和風味，為賞櫻體驗增添了更多樂趣。
                 常見的櫻花相關食物包括：櫻餅、花見糰子、櫻花茶、櫻花口味的零食和點心，以及各種櫻花主題的飲品和便當。</p>
             </div>
 
-            <div id="splide2_img" class="splide">
+            <div id="splide2_img" class="splide gs_reveal  fromRight "data-delay-sec="0.5" >
                 <div class="splide__track">
                     <div class="main_pc3_img splide__list">
                         <img src="../../picture/03.png" class="splide__slide"  alt="羊羹">
@@ -114,15 +120,15 @@
 
         </div>  
 <!--------------------------------第四塊圖------------------------------------>
-        <div class="main_pc4">
+        <div class="main_pc4 ">
 
-            <div class="main_pc4_text">
+            <div class="main_pc4_text gs_reveal fromLeft">
                 <h1>櫻花品種</h1>
                 <p>日本的櫻花品種繁多，其中最常見的有染井吉野櫻、枝垂櫻、河津櫻、大島櫻、山櫻、八重櫻等。
                 這些品種各具特色，差異涵蓋開花時間、花色、花瓣形狀、花期長短甚至香氣。其中染井吉野櫻最為普遍，花色淡粉、盛開時幾乎看不到葉子，帶來雪白花海般的視覺震撼;而枝垂櫻以枝條如瀑布般垂墜著花朵聞名，優雅動人;河津櫻則以早開著稱，是日本春天最早綻放的櫻花之一。</p>
             </div>
 
-            <div id="splide3_img" class="splide">
+            <div id="splide3_img" class="splide gs_reveal  fromRight" data-delay-sec="0.5">
                 <div class="splide__track">
                     <div class="main_pc4_img splide__list">
                         <img src="../../picture/04.jpg"  class='splide__slide' alt="山櫻花">
@@ -171,9 +177,12 @@
 
 
 <!----------------------------JS------------------------------------>        
-
+<script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
 <script src="../../js/sakure.js"></script>
 <script src="../../js/splide.min.js"></script>
+<script src="../../js/hamburger.js"></script>
+<script src="../../js/scroll_gsap.js"></script>
+
 
 <script> document.addEventListener('DOMContentLoaded',function(){    //「DOMContentLoaded 只能等標籤都到定位，就開始啟動；它本身沒幹嘛，只是一個啟動語，告訴 JS 說可以動了」
         new Splide('#splideimg',{               //去抓輪播的區域
@@ -196,6 +205,9 @@
     
     });    
 </script>
+
+
+
 
 </body>
 

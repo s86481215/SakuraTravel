@@ -23,14 +23,17 @@
             </div>
 
             <nav class="main_nav">
-                <ul>
-                    <li><a href="information/html/information.html">櫻花資訊</a></li>
-                    <li><a href="travel_V2.html">旅遊地點</a></li>
-                    <li><a href="tripplanning/html/trip.html">行程規劃</a></li>
-                    <li><a href="food/html/food.html">櫻花美食</a></li>
-                    <li><a href="knowledge/knowledgeV2.html">趣味知識</a></li>
-                    <li><a href="e-mail/html/e-mail_V2.html">櫻-mail</a></li>
+                 <ul>
+                    <li><a href="../../information/html/information.html">櫻花資訊</a></li>
+                    <li><a href="../../travel_V2.html">旅遊地點</a></li>
+                    <li><a href="../../tripplanning/html/trip.html">行程規劃</a></li>
+                    <li><a href="../../food/html/food.html">櫻花美食</a></li>
+                    <li><a href="../../knowledge/knowledgeV2.html">趣味知識</a></li>
+                    <li><a href="../../e-mail/html/e-mail_V2.html">櫻-mail</a></li>
+                    <li><a class= 'icon_1' href="../../Login/html/Login.html"> <i class="fa-regular fa-user"></i>會員登入</a></li>
+                    <li><a class= 'icon_2'  href="../../shoppingcart/html/shop.html"> <i class="fa-solid fa-cart-shopping"></i>購物車</a></li>
                 </ul>
+
 
                 <div class="nav_icon">
                     <a  class= 'icon_1' href="Login/html/Login.html"> <i class="fa-regular fa-user"></i> </a>
@@ -41,6 +44,10 @@
                     <img src="picture/sun.svg"  class = "sun active" alt="櫻花開關on">
                     <img src="picture/night.svg" class = "night" alt="櫻花開關off">
                 </button>
+
+                <div class="hamburger">
+                    <img src="../../picture/icons8-hamburger.svg" alt="">
+                </div>
             </nav>
 
         </div>
@@ -108,6 +115,7 @@
 <!---------------------js區--------------------------------->
     <script src="js/sakure.js"></script>
     <script src="data-detail.js"></script>
+    <script src="../../js/hamburger.js"></script>
     <script>    
         $(function(){
             $('body').on('click','[data-detail]',function(){ //直接綁body最大父層事件監聽click JS會去抓有data-detail元素的標籤(在這邊都是設在按鈕上所以不會有其他標籤點道出BUG)然後執行下面程式
@@ -132,49 +140,47 @@
             })
         })
 
-        const regions = ["關東", "東北", "關西", "中部", "北海道"];
-    // 指派一個 render function
-    function renderAssignedElement(index) {
-     //   alert(`你點擊的是：${regions[index]}（index: ${index}）`);
-        // 你可以根據 index 做更多的渲染或 DOM 操作
-        fetchPageFunction(index)
+            const regions = ["關東", "東北", "關西", "中部", "北海道"];
+        // 指派一個 render function
+        function renderAssignedElement(index) {
+        //   alert(`你點擊的是：${regions[index]}（index: ${index}）`);
+            // 你可以根據 index 做更多的渲染或 DOM 操作
+            fetchPageFunction(index)
     }
 
   // 產生按鈕
-  const btnsDiv = document.getElementById('btns');
-  for (let i = 0; i < regions.length; i++) {
-    const btn = document.createElement('button');
-    btn.textContent = regions[i];
-    btn.onclick = function () {
-      renderAssignedElement(i);
-    };
-    btnsDiv.appendChild(btn);
-  }
+        const btnsDiv = document.getElementById('btns');
+        for (let i = 0; i < regions.length; i++) {
+            const btn = document.createElement('button');
+            btn.textContent = regions[i];
+            btn.onclick = function () {
+            renderAssignedElement(i);
+            };
+            btnsDiv.appendChild(btn);
+        }
 
-  const fetchPageFunction = (index) =>{
-    console.log(index)
-      fetch(`max_box_${index}.html`)
-        .then(res => {
-          if (!res.ok) throw new Error("檔案載入失敗");
-          return res.text();
-        })
-        .then(html => {
-            console.log('fetch HTML內容：', html);
-          $('.max-box')[0].innerHTML = html;
-        })
-        .catch(err => {
-          document.getElementById('max-box').innerHTML = "<p>內容載入失敗，請稍後再試。</p>";
-        });
-  }
- 
-  console.log("fetchPageFunction loaded!");
+        const fetchPageFunction = (index) =>{
+            console.log(index)
+            fetch(`max_box_${index}.html`)
+                .then(res => {
+                if (!res.ok) throw new Error("檔案載入失敗");
+                return res.text();
+                })
+                .then(html => {
+                    console.log('fetch HTML內容：', html);
+                $('.max-box')[0].innerHTML = html;
+                })
+                .catch(err => {
+                document.getElementById('max-box').innerHTML = "<p>內容載入失敗，請稍後再試。</p>";
+                });
+        }
+        
+        console.log("fetchPageFunction loaded!");
 
-  fetchPageFunction(0)
-
-
+        fetchPageFunction(0)
 
     </script>
-
+    
     
 </body>
 </html>

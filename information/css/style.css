@@ -121,3 +121,137 @@ main{
 .blurflow.unblur{  /*(加上unblur清楚)*/
     filter: blur(0px);
 }
+
+/*------------------------------RWD:430--------------------------*/
+@media screen and (max-width:431px) 
+{
+.main_map img{
+    width: 100%;
+    height: 100%;
+}
+
+.flow_wapper{
+    overflow: visible
+    
+}
+.main_flow img {
+    max-width: 350px;
+}
+
+.main_flow.active{
+   aspect-ratio: 4/3;
+    width: 100%;
+    height: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.main_flow{
+    flex-direction:column-reverse;
+    padding:30px 0;
+}
+
+.main_flow  p{
+    width: 80%;
+    height: 80%;
+    display: block;
+    padding: 0;
+}
+
+.main_flow img{
+    width: 100%;
+}
+
+.main_btn{
+    text-align: center;
+}
+
+.main_btn button{
+    margin-left: 0;
+    width: 150px;
+    height: 50px;
+    margin: 10px 5px 10px 5px;
+}
+
+.main_map{
+    margin-bottom: 60px;
+}
+}
+
+/*------------------------------RWD:1170--------------------------*/
+@media screen and (max-width:1170px) 
+{
+
+   .main_btn{
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+
+    }
+    .main_btn button{
+    width: 200px;
+    height: 50px;
+    margin-left: 0px;
+    }
+}
+
+
+/*------------------------------RWD:970--------------------------*/
+@media screen and (max-width:970px) 
+{
+.main_flow img{
+    max-width: 400px;
+}
+.main_flow.active{
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 30px;
+}
+
+}
+
+/*------------------------------RWD:800--------------------------*/
+@media screen and (max-width:800px) 
+{
+
+    .main_map img{
+        width: 100%;
+    }
+}
+
+
+/*------------------------------RWD:730--------------------------*/
+@media screen and (max-width:730px) 
+{
+    .main_flow p{
+        overflow-y:scroll ;
+        box-sizing: border-box;
+        font-size: clamp(0.9rem, 2vw, 1.1rem);
+        padding: 10px;
+    }
+
+    .main_flow.active{
+        flex-direction:column;
+        gap:60px
+    }
+
+    .main_map img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 5/3;
+    }
+
+
+}
+
+@media screen and (max-width:500px) 
+{   
+    .main_btn{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .main_btn button{
+        margin-left: 0px;
+}
+}

@@ -230,3 +230,56 @@ iframe{
 
     
 }
+/*------------------------------RWD:430--------------------------*/
+@media screen and (max-width:433px) 
+{
+.main_flex{
+    flex-direction: column-reverse;
+}
+
+.main_faq{
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    padding:20px;
+    /*outline: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;*/
+    border: 10px solid pink;
+    box-sizing: border-box;
+    }
+
+.main_content{
+    margin: 0;
+    max-width: 100%;
+    width: 430px;
+    padding: 20px;;
+   /* outline: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;*/
+    border: 10px solid pink;
+    box-sizing: border-box;
+    
+}
+
+
+.btn button{
+    width: 100px;
+    height: 50px;
+    font-size: 1.3rem;
+}
+
+.main_text input, textarea{
+    border: none;
+    outline: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
+    
+}
+
+
+
+}
+
+/*------------------------------RWD:800--------------------------*/
+@media screen and (max-width:800px) 
+{
+    .main_flex{
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -24,13 +24,15 @@
             </div>
 
             <nav class="main_nav">
-                <ul>
+               <ul>
                     <li><a href="../../information/html/information.html">櫻花資訊</a></li>
                     <li><a href="../../travel_V2.html">旅遊地點</a></li>
                     <li><a href="../../tripplanning/html/trip.html">行程規劃</a></li>
                     <li><a href="../../food/html/food.html">櫻花美食</a></li>
                     <li><a href="../../knowledge/knowledgeV2.html">趣味知識</a></li>
                     <li><a href="../../e-mail/html/e-mail_V2.html">櫻-mail</a></li>
+                    <li><a class= 'icon_1' href="../../Login/html/Login.html"> <i class="fa-regular fa-user"></i>會員登入</a></li>
+                    <li><a class= 'icon_2'  href="../../shoppingcart/html/shop.html"> <i class="fa-solid fa-cart-shopping"></i>購物車</a></li>
                 </ul>
                 <div class="nav_icon">
                     <a  class= 'icon_1' href="../../Login/html/Login.html"> <i class="fa-regular fa-user"></i> </a>
@@ -40,6 +42,9 @@
                     <img src="../../picture/sun.svg"  class = "sun active" alt="櫻花開關on">
                     <img src="../../picture/night.svg" class = "night" alt="櫻花開關off">
                 </button>
+                <div class="hamburger">
+                    <img src="../../picture/icons8-hamburger.svg" alt="">
+                </div>
             </nav>
 
         </div>
@@ -98,7 +103,7 @@
         <!---吉野櫻--->
 
                 <div id="yoshino" class="main_flow">
-                    <p> <span>吉野櫻</span> 學名 Prunus_yedoensis,又稱東京櫻花或日本櫻花，是一種高大樹木，可達 10 至 15 公尺，開花時呈淡粉紅色，花瓣為單瓣，通常 4 至 5 朵形成總狀花序。萼片、花梗及小花柄上覆有細毛，萼筒上部較細，花蕾呈粉紅色，在葉子長出前便盛開，花色略帶淡紅，完全綻放時逐漸轉白。染井吉野櫻喜愛較涼爽的氣候，在低海拔地區較不易栽種，其中阿里山森林遊樂區為台灣種植最為密集之地，其花期約在 3 至 4 月，三月中旬開始含苞待放，至三月底進入盛開期，為最佳觀賞時機。吉野櫻是日本最普遍的櫻花品種,普遍認為它是由日本原生種大島櫻 (Prunus speciosa) 與江戶彼岸櫻 (Prunus subhirtella) 雜交而成，並分別繼承了花朵較大及先花後葉的特性。此品種栽培歷史悠久，也是日本在海外移植最多的櫻花，象徵意義深厚，廣受喜愛，被視為極具代表性的觀賞植物。</p>
+                    <p> <span>吉野櫻</span> 學名 Prunus_yedoensis,又稱東京櫻花或日本櫻花，是一種高大樹木，可達 10 至 15 公尺，開花時呈淡粉紅色，花瓣為單瓣，通常 4 至 5 朵形成總狀花序。萼片、花梗及小花柄上覆有細毛，萼筒上部較細，花蕾呈粉紅色，在葉子長出前便盛開，花色略帶淡紅，完全綻放時逐漸轉白。染井吉野櫻喜愛較涼爽的氣候，在低海拔地區較不易栽種，其中阿里山森林遊樂區為台灣種植最為密集之地，其花期約在 3 至 4 月，三月中旬開始含苞待放，至三月底進入盛開期，為最佳觀賞時機。吉野櫻是日本最普遍的櫻花品種,普遍認為它是由日本原生種大島櫻 (Prunus speciosa) 與江戶彼岸櫻 (Prunus subhirtella) 雜交而成，並分別繼承了花朵較大及先花後葉的特性。</p>
                     <img src="../../picture/04_1.jpg" class='blurflow' onclick="unblur()" alt="吉野櫻">  <!----參數this表示自己就是參數把自己傳進去----->
                 </div>
 
@@ -137,8 +142,9 @@
 
 
     <!-----------------------------------JS區------------------------------>
-
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <script src="../../js/sakure.js"></script>
+    <script src="../../js/hamburger.js"></script>
     <script>
 
         function swicthflow(id){
@@ -169,6 +175,7 @@
             */
 
     </script>
+
 
 
 </body>

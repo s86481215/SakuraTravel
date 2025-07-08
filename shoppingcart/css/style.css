@@ -164,3 +164,70 @@ main{}
     cursor: pointer;
     transform: translateY(-4px);
 }
+
+/*------------------------------RWD:430--------------------------*/
+@media screen and (max-width:431px) 
+{
+.shop_content{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.shopbox{
+    width: 100%;
+
+}
+
+.shop_bar{
+    box-sizing: border-box;
+    width: 100%;
+    gap: 100px;
+    align-items: flex-start;
+   
+    
+}
+    
+
+.shop_bar p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.bar_circle_se::after{
+    width: 110px;
+    left: 100%;
+}
+
+.bar_circle_se::before{
+    width: 110px;
+    right: 100%;
+}
+
+}
+/*------------------------------RWD:600--------------------------*/
+@media screen and (max-width:600px) {
+    .shop_content{
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        border: 10px solid rgba(239, 49, 138, 0.399);
+    }
+    .shop_bar p{
+        width: 16px;
+        height: 64px;
+    }
+
+    .bar_circle_se::after{
+        left: 100%;
+    }
+
+    .bar_circle_se::before{
+        right: 105%;
+    }
+
+    .shopbox{
+        width: 100%;
+    }
+}

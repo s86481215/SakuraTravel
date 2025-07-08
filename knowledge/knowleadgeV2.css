@@ -107,8 +107,32 @@ main{
 
 
 /*--------------aside nav---------------------*/
+.fa-chevron{
+    height: 50px;
+    width: 100%;
+    font-size: 40px;
+    display: none;
+}
+
+.fa-arrow-alt-circle-left:before, .fa-circle-left:before{
+    display: none;
+}
+
+.box_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  
+}
+
 .main_side{
-    height: auto;
+   
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .aside_nav{
 
@@ -119,8 +143,6 @@ main{
 .aside_nav h2{
     margin-bottom: 5px;
 }
-
-.aside_nav ul{}
 
 .aside_nav li{
     border: color-mix(in srgb, #4A90E2 50%, #A7D3E0 50%) 1px solid;
@@ -136,6 +158,8 @@ main{
     color: #FFB2C1;
     cursor: pointer;
 }
+
+
 /*----------------tag--------------*/
 
 .aside_tag{
@@ -185,8 +209,6 @@ main{
     gap: 60px ;
     margin-top: 40px;
     flex-wrap: wrap;
-
-   
     
     
 }
@@ -301,5 +323,162 @@ font-size: 12px;
 
 }
 
+/*------------------------------RWD:551--------------------------*/
+@media screen and (max-width:551px) 
 
+{   
+    
+    .main_side{
+        
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index:9999  !important;
+    }
 
+    .fa-chevron{
+    display: block;
+    color: #B25A74;
+    transition: transform 1.5s ease;
+    transform: rotate(0deg);
+
+    }
+
+    .fa-chevron.right{
+    transform: rotate(180deg);
+   
+    }   
+
+    
+    .main_content{
+        
+        z-index: 999;
+    }
+
+    .card_content{
+        border: 10px solid plum;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .main_carbox img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .aside_nav ul{
+        padding: 10px;
+    }
+    .member_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .member_content{
+        
+          width: 90%;
+    }
+
+    .aside_foorer input{
+        width: 100%;
+    }
+
+    .aside_foorer{
+        width: 90%;
+    }
+
+}
+
+    /*------------------------------RWD:820--------------------------*/
+    @media screen and (max-width:820px) 
+
+    {   .box_box{width: 100%;
+
+    }
+        .main_side{
+           
+            width: 250px; 
+           
+        }
+        .main_content{
+            max-width: 100%;
+            width: 100vw ;
+            padding-left: 0; /* 確保沒有左側padding */
+            margin-left: 0;  /* 確保沒有左側margin */
+       
+
+    }
+        .main_carbox.active{
+            
+            max-width: none;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap:  30px;
+            padding: 0 20px 0 20px;
+            width:100%;
+            min-width: 0 ;
+            flex: 1;
+            scroll-padding-left: 20px; 
+            
+        
+        }
+        .card_content:first-child {
+            margin-left: 500px; /* 第一張卡片往右偏移500px */
+            }
+
+        .card_content{
+            flex-grow: 0;
+            flex-shrink: 0;
+            padding: 20px;
+            scroll-snap-align: start;
+            max-width: 100%;
+            box-sizing: border-box;
+            width: 100%
+        }
+
+        .main_carbox img{
+            max-width: 350px;
+            width: 100%
+        }
+
+}
+/*------------------------------RWD:600--------------------------*/
+    @media screen and (max-width:601px) 
+    {   .main_carbox.active{
+        flex-direction: column;}
+
+        .main_carbox.active{
+             flex-wrap: wrap;   
+            max-width: none;
+            overflow-x:  visible !important;
+            scroll-snap-type: none;
+            gap:  30px;
+            padding: 0 20px 0 20px;
+            width:100%;
+           
+        
+        }
+
+        .card_content{
+            width: 100%;
+             scroll-snap-align: none;
+        }
+
+        .card_content:first-child {
+            margin-left: 0px; /* 第一張卡片往右偏移500px */
+            }
+
+}
+/*-----------------RWD:1375-------------------------*/
+
+@media screen and (max-width:1375px) 
+    {
+        .main_side{
+            height: 800px;
+
+        }
+     }

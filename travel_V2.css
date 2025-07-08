@@ -55,12 +55,11 @@
 }
 
 .trvel_card{
-    
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     max-width: 1200px;
     width: 100%;
-    max-height: 600px;
     height: 100%;
     padding: 20px;
     border: 1px rgb(33, 192, 227) solid;
@@ -75,9 +74,10 @@
     gap: 80px;
     max-width: 1200px;
     width: 100%;
-    min-height: 400px;
+    height: auto;
     padding: 5px;
     background-color: #FEEDED;
+     box-sizing: border-box;
     
     
 
@@ -99,7 +99,8 @@
     gap: 10px;
     flex-direction: column;
     color: #B25A74;
-    max-width: 400px;   
+    max-width: 400px; 
+    
     
 }
 
@@ -414,3 +415,142 @@ margin-bottom: 10px;
     margin-right: 5px;
 }
 
+/*------------------------------RWD:430--------------------------*/
+@media screen and (max-width:431px) 
+{
+    .main_content{
+        flex-wrap: wrap;
+    }
+
+    .mainpar1_nav button{
+        padding: 0;
+        width: 150px;
+    
+        
+    }
+
+    .mainpar1_nav{flex-wrap: wrap;
+    }
+
+    
+    
+    .trvel_box{
+        flex-direction: column;
+        gap: 30px;
+        height: 100%; 
+        }
+
+    .trvel_img img{
+        width: 100%;
+    }
+    .trvel_card{
+        width: 100%;
+        height: auto; 
+        max-width: 350px;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+    .map_box{
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+        padding: 10px;
+        max-width: 400px;
+    }
+    .map_card{
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    .ticket_content{
+        gap: 10px;
+    }
+    .main_h3 span{
+        width: 55px;
+        margin-right: 10px;
+    }
+    .ticket_content p:nth-last-child(2){
+        margin-left: 50px;
+        width: 275px;
+    }
+    .ticket_content p:nth-last-child(1){
+        width: 130px;
+        }
+    }
+/*------------------------------RWD:1000--------------------------*/
+@media screen and (max-width:1000px) 
+{
+    main{font-size: clamp(0.9rem, 2vw, 1.1rem);}
+.trvel_img img{
+    
+    width: 100%;
+}
+
+.trvel_box{
+    flex-direction: column;
+    
+}
+
+.trvel_card{
+    width: 50%;
+   
+}
+
+.main_center{
+    flex-direction: row;
+    gap: 50px;
+     position: relative;
+}
+
+.map_card{
+    flex-direction: column;
+    position:absolute;
+    left: 0;
+    top: 1050px;
+}
+  }
+
+/*------------------------------RWD:550--------------------------*/
+@media screen and (max-width:550px) 
+{
+    .main_center{ gap: 20px;}
+    .map_box{
+        flex-direction: column;
+
+    }
+    .map_card{
+        position: static;
+        top: auto;          
+        left: auto;
+        right: auto;
+        bottom: auto;
+        background-color: #d4230063;
+    }
+    
+    .main_center{
+    flex-direction: column}
+
+     .trvel_img img{
+        width: 100%;
+    }
+    .trvel_card{
+        width: 100%;
+        height: auto; 
+        max-width: 350px;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
