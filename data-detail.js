@@ -299,9 +299,9 @@
                         </div>
 
                         <div class="transportation">
-                            <h4><img src="/picture/櫻花.svg" alt=""></i>交通方式</h4>
+                            <h4><img src="picture/櫻花.svg" alt=""></i>交通方式</h4>
                             <p><span><i class="fa-solid fa-train"></i></span>東京站 → JR山手線(10分) → <span><i class="fa-solid fa-train"></i></span>上野站 → 步行(5分) → <span><i class="fa-regular fa-flag"></i></span>上野恩賜公園</p>
-                            <h5><img src="/picture/櫻花.svg" alt="">周邊景點</h5>
+                            <h5><img src="picture/櫻花.svg" alt="">周邊景點</h5>
                             <p><span>不忍池 : </span>賞櫻勝地，也可搭小船遊湖，夏季有蓮花池景觀。</p>
                             <p><span>東京國立博物館 : </span>收藏日本國寶與重要文化財，是日本最大博物館。</p>
                             <p><span>上野東照宮 : </span>江戶時代遺留下來的金碧輝煌神社，歷史氣息濃厚。</p>
