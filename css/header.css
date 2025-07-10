@@ -1,10 +1,11 @@
 @import url(reset.css);
 body{
-    background-image: url(../picture/bgimgV4.png),url(../picture/body_bag2.png);
+    background-image: url(../picture/bgimgV4.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family:'Roboto',sans-serif;
     background-attachment:fixed;
+        
 }
 /*-------------LOGO與nav外層-------------*/
 .header{

@@ -4,8 +4,21 @@ main{
     line-height: 1.6;
     font-size: 16px;
     color: #54494B;
-}
+    width: 100%;
+    /*background-image: url(../../picture/body_bag2.png);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+
+    }
+
+
+
+
+
 /*--------------------------------第一塊圖----------------------------------->*/
+.bgc{
+   
+}
 .main_pc1{
     display: flex;
     justify-content: center;

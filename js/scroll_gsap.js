@@ -54,7 +54,7 @@ function animateFrom(elem, direction) {      //animateFrom(elem)函數定義在�
       autoAlpha: 1, // opacity:1 且 visibility: visible
       ease: "expo",
       overwrite: "auto", // // 避免重疊動畫干擾
-      delay: d,  
+      delay: d,  //控制延遲時間
     }
   );
 }

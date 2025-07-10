@@ -349,7 +349,9 @@ margin-bottom: 10px;
 
 .map_content{
 
-}
+     max-width: 350px;
+     width: 100%;
+    }
 
 
 

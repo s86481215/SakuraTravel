@@ -382,6 +382,11 @@ font-size: 12px;
           width: 90%;
     }
 
+    form button{
+        margin-top: 15px;
+        height: 30px;
+    }
+
     .aside_foorer input{
         width: 100%;
     }
