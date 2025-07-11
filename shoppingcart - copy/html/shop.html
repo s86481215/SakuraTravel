@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/skafall.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="icon" href="../../picture/LOGO.svg">
+    <title>購物車</title>
+</head>
+
+
+<body>
+ <!-----------------------------以下屬於header_nav------------------------------>  
+   <header class="header">
+
+        <div class="header_content">
+            <div class="logo">
+                <a href="../../home/html/sakure.html"><img src="../../picture/LOGO.svg" alt=""></a>
+            </div>
+
+            <nav class="main_nav">
+
+                <ul>
+                    <li><a href="../../information/html/information.html">櫻花資訊</a></li>
+                    <li><a href="../../travel_V2.html">旅遊地點</a></li>
+                    <li><a href="../../tripplanning/html/trip.html">行程規劃</a></li>
+                    <li><a href="../../food/html/food.html">櫻花美食</a></li>
+                    <li><a href="../../knowledge/knowledgeV2.html">趣味知識</a></li>
+                    <li><a href="../../e-mail/html/e-mail_V2.html">櫻-mail</a></li>
+                    <li><a class= 'icon_1' href="../../Login/html/Login.html"> <i class="fa-regular fa-user"></i>會員登入</a></li>
+                    <li><a class= 'icon_2'  href="../../shoppingcart/html/shop.html"> <i class="fa-solid fa-cart-shopping"></i>購物車</a></li>
+                </ul>
+
+                <div class="nav_icon">
+                    <a  class= 'icon_1' href="../../Login/html/Login.html"> <i class="fa-regular fa-user"></i> </a>
+                    <a class= 'icon_2'  href="../../shoppingcart/html/shop.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+                <button class="main_theme-switch">
+                    <img src="../../picture/sun.svg"  class = "sun active" alt="櫻花開關on">
+                    <img src="../../picture/night.svg" class = "night" alt="櫻花開關off">
+                </button>
+                <div class="hamburger">
+                    <img src="../../picture/icons8-hamburger.svg" alt="">
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+
+<!--------------------------------以下屬於main------------------------------->
+
+    <main>
+        <!----------這是櫻花的空盒子------------>
+
+        <div class="sakubox"></div> 
+
+        <div class="main_shoppingcart_banner"></div>
+
+<!--------------------------------shoppingcart-bar----------------------------------->
+
+        <div class="shop_bar">
+            <div class="bar_circle">
+                <div class="circle_1"></div>
+                <p>行程選擇</p>
+            </div>
+
+            <div class="bar_circle_se">
+                <div class="circle_2"></div>
+                <p>購物車</p>
+            </div>
+
+            <div class="bar_circle_th">
+                <div class="circle_3"></div>
+                <p>訂單確認</p>
+            </div>
+
+        </div>
+
+
+        <!--------------------------------shopping----------------------------------->
+
+        <div class="shopping">
+
+            <div class="shop_content">
+                <div class="shopptitle">
+                    <h1>我的購物車</h1>
+                </div>
+
+                <div class="shopbox">
+                    <div class="shopplist">
+                        <i class="fa-solid fa-trash"></i>
+                        <p>五稜郭公園-賞櫻季</p>
+                    </div>
+                    <div class="money">  <p>NT$4,500</p> </div>
+                </div>
+
+                <div class="shopbox">
+                    <div class="shopplist">
+                        <i class="fa-solid fa-trash"></i>
+                        <p>上野恩賜公園一日遊</p>
+                    </div>
+                <div class="money"> <p>NT$5,500</p> </div>
+            </div>
+
+            <a href="../../checkout/html/checkout.html"><button class="shop_btn">訂單確認</button></a>
+
+            
+           
+        </div>  
+
+    </main>
+    <!------------------------------footer---------------------------------------->
+     <footer>
+
+        <div class="footer_content">
+
+            <div class="footer_border">
+                <div class="footer_logo">
+                    <img src="../../picture/LOGO.svg" alt="櫻映旅途logo">
+                </div>
+
+                <div class="footer_text">
+                    <h2>電話: 02-2712-0589</h2>
+                    <h3>地址: 104台北市中山區南京東路三段219號</h3>
+                    <h4>信箱: sakura@gmail.com</h4>
+                </div>
+
+                <div class="footer_icon">
+                    <a href=""><i class="fa-brands fa-line" style="color: #63E6BE;"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter" style="color: #74C0FC;"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook" style="color: #173fde;"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer_note">
+            <p>本網站為緯育TibaMe前端工程師班第XX期學員專題作品,本平台僅供學習、展示之用。參考資源: www.wwww.wwwww.com</p>
+        </div>
+
+    </footer>
+
+<!---------------------js區--------------------------------->
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="../../js/sakure.js"></script>
+    <script src="../../js/hamburger.js"></script>
+
+</body>
+</html>
