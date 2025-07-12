@@ -130,7 +130,7 @@
 
     <script>
         $(function(){
-            $('body').on('click','.transportation_btn[map-data]',function(){ 
+            $('body').on('click','.transportation_btn[map-data]',function(){  //基本上跟上面一樣
                 const idx = $(this).attr('map-data')
                 $(`.map_card[map-data="${idx}"]`).slideToggle(1000,function(){
                   console.log('被點了');
@@ -145,10 +145,10 @@
         function renderAssignedElement(index) {
         //   alert(`你點擊的是：${regions[index]}（index: ${index}）`);
             // 你可以根據 index 做更多的渲染或 DOM 操作
-            fetchPageFunction(index)
+            fetchPageFunction(index)  //呼叫函數,定義在下面
     }
 
-  // 產生按鈕
+  // $動態產生按鈕 其實可以不用..因為已經把按鈕固定在渲染頁面之外了 
         const btnsDiv = document.getElementById('btns');
         for (let i = 0; i < regions.length; i++) {
             const btn = document.createElement('button');
@@ -161,15 +161,15 @@
 
         const fetchPageFunction = (index) =>{
             console.log(index)
-            fetch(`max_box_${index}.html`)
+            fetch(`max_box_${index}.html`)   //利用 fetch()函數 提出請求抓出頁面
                 .then(res => {
                 if (!res.ok) throw new Error("檔案載入失敗");
                 return res.text();
                 })
                 .then(html => {
                     console.log('fetch HTML內容：', html);
-                $('.max-box')[0].innerHTML = html;
-                })
+                $('.max-box').load(`max_box_${index}.html`);     //也可以 [0].innerHTML = html;  注意! 第0頁的JS必須拿掉 
+                })   //因為我預設顯示就是第0頁 不拿掉的話JS程式會重複跑兩次會報錯 同時也只有load他會去跑渲染頁面的JS 
                 .catch(err => {
                 document.getElementById('max-box').innerHTML = "<p>內容載入失敗，請稍後再試。</p>";
                 });
