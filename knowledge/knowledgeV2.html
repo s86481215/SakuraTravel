@@ -540,7 +540,8 @@
                 $('.main_carbox').removeClass('active')
                 $('.main_carbox').eq(idx).addClass('active') //利用eq eq功用是可以根據指引順序抓去對應元素
             })
-
+            
+            //RWD箭頭樣式的fuc
                 $('.fa-chevron').on('click',function(){   //rwd專用 把main_side 先丟到body 
                 
                     $('.main_side').toggle('slide',{direction: 'left', appendTo:'body' },1000)

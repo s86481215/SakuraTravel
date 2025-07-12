@@ -40,6 +40,9 @@ function animateFrom(elem, direction) {      //animateFrom(elem)函數定義在�
     x = 100*direction;
     y = 0;
   }
+
+
+  
 //以下段落為元素要移動的位置 通常是原位 意味著 X Y 都是回歸(0,0)//
 
   elem.style.transform = "translate(" + x + "px, " + y + "px)";

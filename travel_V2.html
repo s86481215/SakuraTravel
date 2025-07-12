@@ -160,10 +160,10 @@
         }
 
         const fetchPageFunction = (index) =>{
-            console.log(index)
+            console.log(index)       //下面利用了Promise Chain的方法 第一個結果回傳到 第二個 第二個基於第一個的結果執行內容
             fetch(`max_box_${index}.html`)   //利用 fetch()函數 提出請求抓出頁面
-                .then(res => {
-                if (!res.ok) throw new Error("檔案載入失敗");
+                .then(res => {   //回傳的狀態碼是 200~299（成功）以外都失敗
+                if (!res.ok) throw new Error("檔案載入失敗");  //如果失敗跳第三個
                 return res.text();
                 })
                 .then(html => {
@@ -173,7 +173,7 @@
                 .catch(err => {
                 document.getElementById('max-box').innerHTML = "<p>內容載入失敗，請稍後再試。</p>";
                 });
-        }
+        }   //其實用load可以取代上面整串的函式 因為load本身就包含了轉字串  解析HTML 等等一連串...
         
         console.log("fetchPageFunction loaded!");
 
