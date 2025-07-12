@@ -461,6 +461,7 @@ margin-bottom: 10px;
     .map_card{
         box-sizing: border-box;
         padding: 20px;
+        max-width: 350px;
     }
 
     .map_content{
