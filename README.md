@@ -91,6 +91,16 @@ cd SakuraTravel
 
 # 3. 使用瀏覽器打開 index.html
 ```
+## 📷 截圖展示 (Screenshots)
+
+### 首頁 (Mockup)
+![首頁 Mockup](./screenshots/homepage.png)
+
+### 櫻花介紹 (Mockup)
+![櫻花知識 Mockup](./screenshots/information.png)
+
+### 討論區 (Mockup)
+![趣味討論區 Mockup](./screenshots/knowledge.png)
 
 ## 🗺 未來規劃 (Roadmap)
 ```bash
