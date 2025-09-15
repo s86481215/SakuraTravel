@@ -39,7 +39,7 @@
 ## 🛠 使用技術 (Tech Stack)
 
 **前端技術**  
-- HTML5、CSS3、JavaScript (原生)  
+- HTML、CSS、JavaScript (原生)、jQuery
 - GSAP (動畫效果)  
 - Splide.js (圖片輪播展示)  
 
