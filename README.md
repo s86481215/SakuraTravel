@@ -76,7 +76,7 @@ SakuraTravel/
 └── README.md
 
 
-🚀 安裝與使用 (Installation & Usage)
+## 🚀 安裝與使用 (Installation & Usage)
 方法一：直接線上瀏覽
 
 👉 GitHub Pages Demo
@@ -91,7 +91,7 @@ cd SakuraTravel
 # 3. 使用瀏覽器打開 index.html
 
 
-🗺 未來規劃 (Roadmap)
+## 🗺 未來規劃 (Roadmap)
 
  新增會員登入 / 註冊系統
 
@@ -103,6 +103,6 @@ cd SakuraTravel
 
 
 
-📜 授權 (License)
+## 📜 授權 (License)
 
 本專案僅供個人學習與作品展示使用。
