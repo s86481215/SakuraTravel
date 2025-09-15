@@ -175,7 +175,7 @@ details summary::marker{
 details p {
     margin-top: 20px;
     font-size: 14px;
-    background-color: color-mix(in srgb, #FFB2C1 30%, #FF6F91 30%);
+    line-height: 1.6;
      
 
 }

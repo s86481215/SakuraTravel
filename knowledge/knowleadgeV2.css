@@ -421,7 +421,7 @@ font-size: 12px;
             max-width: none;
             flex-wrap: nowrap;
             overflow-x: auto;
-            scroll-snap-type: x mandatory;
+            scroll-snap-type: x mandatory; /* 會有吸附功能讓滑動效果更平滑 */
             gap:  30px;
             padding: 0 20px 0 20px;
             width:100%;

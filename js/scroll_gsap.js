@@ -51,12 +51,12 @@ function animateFrom(elem, direction) {      //animateFrom(elem)函數定義在�
     elem,
     { x: x, y: y, autoAlpha: 0 }, //上面帶入參數X Y 代表移動距離
     {
-      duration: 1.5,
+      duration: 1.5,  //動畫總持續時間  
       x: 0, //回到原本位置   
       y: 0,
-      autoAlpha: 1, // opacity:1 且 visibility: visible
-      ease: "expo",
-      overwrite: "auto", // // 避免重疊動畫干擾
+      autoAlpha: 1, // 裡面等於 = opacity:1 且 visibility: visible
+      ease: "expo", //expo 緩入緩出效果
+      overwrite: "auto", // // 避免重疊動畫干擾 預設auto
       delay: d,  //控制延遲時間
     }
   );

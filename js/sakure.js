@@ -5,7 +5,7 @@
 
             start = setInterval(() => {                             //這行是整個執行的邏輯核心 簡單講就是重複執行花瓣掉落的函數 每300毫秒=0.3秒重複執行
             const  saktime = document.createElement('div');        // 直接創造新的div 裝進變數saktime 這行應該是要讓櫻花無限產生的關鍵
-            saktime.classList.add('sakucon')                      //變數div上一行定義了 = saktime 讓saktime這個變數增加.class 讓他能套用CSS事先建好的櫻花模板
+            saktime.classList.add('sakucon')                      //變數div 上一行定義了 = saktime 讓saktime這個變數增加.class 讓他能套用CSS事先建好的櫻花模板
             saktime.style.left = `${Math.random()*100}vw  `;     // 花瓣從左邊開始產生 從0~100% VW是寬度 換句話說 他會隨機在螢幕0~100%的寬度出現
 
             const size = Math.random()*20+10;                  //這邊決定花瓣的大小 亂數產生0~0.999999 乘20 = (0~19.99999)+10 等於每片大小介於10~30之間
@@ -31,6 +31,9 @@
 
         startsakura(); //啟動櫻花函數
 
+
+        /*--------------------------按鈕設置---------------------------------*/
+
         const sun = document.querySelector('.sun') //抓到.sun 按鈕 掛上事件監聽
         const night = document.querySelector('.night') //抓到.night 按鈕 掛上事件監聽
         const btn = document.querySelector('.main_theme-switch') //抓到 按鈕外框 掛上事件監聽 直接對整個button掛上click 所以抓外框 
@@ -41,7 +44,7 @@
                sun.classList.remove('active')     //上半部是停止功能 停止的時候要切換夜晚 要切換夜晚圖案就是add avtive
                night.classList.add('active')      //所以上面sun移除 下面night增加
                 if (start){                      //if 迴圈裡是停止動畫 如果start有值表示在啟動
-                clearInterval(start);           //停止定時器
+                clearInterval(start);           //clearInterval 停止定時器 用來停止setInterval()
                 start = null ;                  //回傳空參數 停止動畫
         document.querySelectorAll('.sakucon').forEach(el =>el.remove()); //刪除所有.sakucon名稱的櫻花 (幾個不知道系統產生的)
                         }
